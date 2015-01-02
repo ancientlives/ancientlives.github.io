@@ -1,0 +1,18 @@
+name: "ancientlives"
+description: "a collection of interesting resources..."
+
+url: "http://localhost:4000"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
+highlighter: pygments
+
+excerpt_separator: <!--more-->
+
+collections:
+  library:
+    output: true
+  dev:
+    output: true    
