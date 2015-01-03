@@ -1,0 +1,35 @@
+	<!-- side-left -->
+	<div id="side-left" class="col-xs-12 col-sm-12 col-md-3">
+		
+		<!-- header -->
+		<div id="header">
+		<h3>ancientlives</h3>
+		</div><!-- /header -->
+		     
+   		<!-- list-group (menus) -->
+		<div class="list-group">
+   		<ul class="list-group-item">
+   		<small>
+   	 	<h6 class="list-group-item-heading">Menu</h6>
+    	<li class="list-unstyled"><a href="/">home</a></li>
+    	<li class="list-unstyled"><a href="/about">about</a></li>
+    	<li class="list-unstyled"><a href="/blog">blog</a></li>
+    	<li class="list-unstyled"><a href="/contact">contact</a></li>
+    	<li class="list-unstyled"><a href="/library">library</a></li>
+    	</small>
+   		</ul>
+   		</div><!-- /list-group (menus) -->
+    	
+    	<!-- list-group (posts) -->
+    	<div class="list-group">
+   		<ul class="list-group-item">
+   		<small>
+    	<h6 class="list-group-item-heading">Latest Posts</h6>
+    	{% for post in site.posts limit: 5 %}
+    	<li class="list-unstyled"><a href="{{ post.url }}">{{ post.title }}</a></li>
+    	{% endfor %}
+    	</small>
+   		</ul>
+		</div><!--/list-group (posts) --> 
+		     
+	</div><!-- /side-left -->

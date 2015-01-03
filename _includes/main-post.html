@@ -1,0 +1,10 @@
+	<!-- main-right -->
+	<div id="main-right" class="col-xs-12 col-sm-12 col-md-9 pull-right">
+		<!-- content -->
+		<div id="content">
+		<h3>{{ page.title }}</h3>
+		{{ content }}
+		<hr />	
+		<p>Tags: {% for tag in page.tags %} <a href="/tags/{{ tag }}">{{ tag }}</a> {% if forloop.last != true %} | {% endif %} {% endfor %}</p>
+    	</div><!-- /content -->
+    </div><!-- /main-right -->
