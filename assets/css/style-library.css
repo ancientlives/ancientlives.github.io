@@ -38,6 +38,31 @@ border-top: 0;
 border-bottom: 1px solid #eeeeee;
 }
 
+/* customised nav */
+#side-left .navbar-default  {
+background-color: #ffffff;
+border-bottom: 1px solid #eeeeee;
+padding: 10px;
+margin-bottom: 5px;
+}
+
+#side-left .navbar-default  a {
+color: #000000;
+}
+
+#side-left .navbar-collapse {
+padding-left: 0;
+padding-right: 0;
+}
+
+#side-left .navbar-default .navbar-toggle {
+border-color: #dedede;
+}
+
+#side-left .navbar-default .navbar-toggle .icon-bar {
+background-color: #000000;
+}
+
 /* main content wrapper div */
 #main-right {
 height: 100%;
@@ -60,6 +85,7 @@ font-size: 19px;
 }
 
 #content h4 {
+padding-top: 10px;
 font-size: 16px;
 }
 
@@ -70,7 +96,7 @@ bottom: 20px;
 font-size: 12px;
 }
 
-@media print, screen and (max-width: 992px) {
+@media print, screen and (max-width: 768px) {
 
 #side-left, #main-right, #footer {
 float:none;
