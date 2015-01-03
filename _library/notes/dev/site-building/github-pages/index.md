@@ -1,5 +1,5 @@
 ---
-title: Dev - Site Building - GitHub Pages
+title: GitHub Pages
 layout: default-vertical
 
 categories:
@@ -10,7 +10,7 @@ categories:
 - github
 - github-pages
 
-tags: library notes dev site-building github github-pages
+tags: library notes dev site-building github github-pages overview
 year: 2015
 month: 01
 day: 03

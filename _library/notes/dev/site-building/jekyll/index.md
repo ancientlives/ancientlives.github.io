@@ -1,5 +1,5 @@
 ---
-title: Dev - Site Building - Jekyll
+title: Jekyll
 layout: default-vertical
 
 categories:
@@ -9,7 +9,7 @@ categories:
 - site building
 - jekyll
 
-tags: library notes dev site-building jekyll
+tags: library notes dev site-building jekyll overview
 year: 2015
 month: 01
 day: 03
