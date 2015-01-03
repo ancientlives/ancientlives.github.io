@@ -1,5 +1,5 @@
 ---
-title: Jekyll Notes
+title: Dev - Site Building - Jekyll
 layout: default-vertical
 
 categories:
@@ -24,6 +24,6 @@ Jekyll enables the transformation of plain text into static websites and blogs. 
 This collection of notes is for reference purposes only, and is not intended to replace the official [documentation](http://jekyllrb.com/docs/home/).
 
 #### Contents
-# Introduction
-# Usage
+* Introduction
+* Usage
   * Basic
