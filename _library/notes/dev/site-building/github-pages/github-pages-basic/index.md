@@ -1,7 +1,7 @@
 ---
 title: GitHub Pages Basic Setup
 author: ancientlives
-layout: default-vertical
+layout: library-article-vertical
 
 categories:
 - library
@@ -14,7 +14,8 @@ categories:
 tags: library notes dev site-building github github-pages setup
 year: 2015
 month: 01
-day: 03
+day: 04
+date: 04-01-2015
 published: true
 summary: setup Jekyll with GitHub pages
 ---
