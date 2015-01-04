@@ -21,4 +21,4 @@ summary: quick notes on setup and usage of GitHub Pages
 These notes are an overview of setting up a Jekyll site with GitHub pages. For further details please see the GitHub [documentation](https://pages.github.com/).
 
 #### Contents
-* GitHub Pages Basic Setup
+* [GitHub Pages Basic Setup](github-pages-basic)

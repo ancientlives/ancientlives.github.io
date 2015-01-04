@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://localhost:4000/github-pages/library/notes/site-building/2015/01/04/github-pages/</loc>
+    <lastmod>2015-01-04T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:4000/general/site/library/2015/01/03/library-open/</loc>
+    <lastmod>2015-01-03T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://localhost:4000/general/github-pages/2015/01/02/github-site/</loc>
     <lastmod>2015-01-02T00:00:00+00:00</lastmod>
     <priority>0.8</priority>
@@ -12,77 +22,98 @@
   </url>
   <url>
     <loc>http://localhost:4000/about/</loc>
-    <lastmod>2015-01-04T14:58:05+00:00</lastmod>
+    <lastmod>2015-01-04T15:49:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/blog/</loc>
-    <lastmod>2015-01-04T14:58:05+00:00</lastmod>
+    <lastmod>2015-01-04T15:49:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/contact/</loc>
-    <lastmod>2015-01-04T14:58:05+00:00</lastmod>
+    <lastmod>2015-01-04T15:49:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/</loc>
-    <lastmod>2015-01-04T14:58:05+00:00</lastmod>
+    <lastmod>2015-01-04T15:49:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/</loc>
-    <lastmod>2015-01-04T14:58:05+00:00</lastmod>
+    <lastmod>2015-01-04T15:49:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/</loc>
-    <lastmod>2015-01-04T14:58:05+00:00</lastmod>
+    <lastmod>2015-01-04T15:49:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://localhost:4000/library/notes/dev/site-building/github-pages/github-pages-basic/</loc>
+    <lastmod>2015-01-04T15:49:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/site-building/github-pages/</loc>
-    <lastmod>2015-01-04T14:58:05+00:00</lastmod>
+    <lastmod>2015-01-04T15:49:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/site-building/</loc>
-    <lastmod>2015-01-04T14:58:05+00:00</lastmod>
+    <lastmod>2015-01-04T15:49:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/site-building/jekyll/</loc>
-    <lastmod>2015-01-04T14:58:05+00:00</lastmod>
+    <lastmod>2015-01-04T15:49:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/</loc>
-    <lastmod>2015-01-04T14:58:05+00:00</lastmod>
+    <lastmod>2015-01-04T15:49:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/general/index.html</loc>
-    <lastmod>2015-01-04T14:58:05+00:00</lastmod>
+    <lastmod>2015-01-04T15:49:25+00:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/github-pages/index.html</loc>
-    <lastmod>2015-01-04T14:58:05+00:00</lastmod>
+    <lastmod>2015-01-04T15:49:25+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://localhost:4000/tags/library/index.html</loc>
+    <lastmod>2015-01-04T15:49:25+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://localhost:4000/tags/notes/index.html</loc>
+    <lastmod>2015-01-04T15:49:25+00:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/site/index.html</loc>
-    <lastmod>2015-01-04T14:58:05+00:00</lastmod>
+    <lastmod>2015-01-04T15:49:25+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://localhost:4000/tags/site-building/index.html</loc>
+    <lastmod>2015-01-04T15:49:25+00:00</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
