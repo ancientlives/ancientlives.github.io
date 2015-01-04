@@ -14,7 +14,7 @@ excerpt_separator: <!--more-->
 collections:
   library:
     output: true
-  dev:
+  indices:
     output: true    
 
 gems:
