@@ -1,13 +1,13 @@
 ---
-title: GitHub Pages
+title: Site hosting 
 author: ancientlives
 layout: post-vertical
 
 categories:
 - general
-- github
+- github-pages
 
-tags: general site github
+tags: general site github-pages
 year: 2015
 month: 1
 day: 2
