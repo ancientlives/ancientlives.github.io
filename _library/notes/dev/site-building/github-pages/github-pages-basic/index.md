@@ -32,7 +32,7 @@ A brief overview of setting up a Jekyll site with GitHub pages. Further details 
 * Disable Jekyll
 
 ##### Intro
-GitHub pages currently supports hosting sites using [Jekyll](http://jekyllrb.com) generated static sites. It also supports [Markdown](http://daringfireball.net/projects/markdown/$
+GitHub pages currently supports hosting sites using [Jekyll](http://jekyllrb.com) generated static sites. It also supports [Markdown](http://daringfireball.net/projects/markdown/)
 which allows text to HTML conversion. It also supports standard HTML sites, although this requires opting out of the default Jekyll option.
 
 ##### Initial setup - Jekyll sites
