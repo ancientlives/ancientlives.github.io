@@ -1,5 +1,6 @@
 ---
 title: A new year, a new site
+author: ancientlives
 layout: post-vertical
 
 categories:
@@ -7,8 +8,8 @@ categories:
 
 tags: general site
 year: 2015
-month: 1
-day: 1
+month: 01
+day: 01
 published: true
 summary: welcome to the new site and a new year, 2015.
 ---

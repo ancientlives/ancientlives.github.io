@@ -16,3 +16,6 @@ collections:
     output: true
   dev:
     output: true    
+
+gems:
+  - jekyll-sitemap

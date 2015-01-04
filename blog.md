@@ -16,7 +16,7 @@ summary: an index of site blog posts
   
   {{ post.summary | replace: '<h3>','<h6>' | replace: '</h3>','</h6>' }}
   
-  Tags: {% for tag in post.tags %} <a href="/tags/{{ tag }}">{{ tag }}</a>  | {% if forloop.last != true %} {% endif %} {% endfor %}
+  Tags: {% for tag in post.tags %} <a href="/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last != true %}, {% endif %} {% endfor %}
 ---
 {% endfor %}
 
