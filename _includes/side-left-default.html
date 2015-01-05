@@ -36,13 +36,26 @@
     	<div class="list-group">
    		<ul class="list-group-item">
    		<small>
-    	<h6 class="list-group-item-heading">Latest Posts</h6>
-    	{% for post in site.posts limit: 5 %}
+    	<h6 class="list-group-item-heading">Latest Blog Posts</h6>
+    	{% for post in site.categories.blog limit: 5 %}
     	<li class="list-unstyled"><a href="{{ post.url }}">{{ post.title }}</a></li>
     	{% endfor %}
     	</small>
    		</ul>
 		</div><!--/list-group (posts) --> 
+		
+		<!-- list-group (posts) -->
+    	<div class="list-group">
+   		<ul class="list-group-item">
+   		<small>
+    	<h6 class="list-group-item-heading">Latest Library Posts</h6>
+    	{% for post in site.categories.library limit: 5 %}
+    	<li class="list-unstyled"><a href="{{ post.url }}">{{ post.title }}</a></li>
+    	{% endfor %}
+    	</small>
+   		</ul>
+		</div><!--/list-group (posts) --> 
+		
 		</div><!-- /.navbar-collapse -->  
 		     
 	</div><!-- /side-left -->

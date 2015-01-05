@@ -2,7 +2,9 @@
 	<div id="main-right" class="col-xs-9 col-sm-9 col-md-9 pull-right">
 		<!-- content -->
 		<div id="content">
-			<h3>{{page.title}}</h3>
+			<h3>Content category - {{ page.title }}</h3>
+			<p><em>all site posts categorised as '{{ page.title }}'</em></p>
+			<hr />
 			<table class="table table-bordered">
 			<tbody>
 			<thead>
@@ -17,7 +19,9 @@
 					<td>{{ post.date | date: "%d-%m-%Y" }}</td>
 					<td><a href="{{ post.url }}">{{ post.title }}</a></td>
 					<td>{{ post.summary }}</td>
-					<td>{% for cat in post.categories %} <a href="/cats/{{ cat }}">{{ cat }}</a>{% if forloop.last != true %}, {% endif %} {% endfor %} </td>
+					<td>{% for cat in post.categories %} 
+					<a href="/cats/{{ cat }}">{{ cat }}</a>{% if forloop.last != true %}, {% endif %} {% endfor %} 
+					</td>
 					</td>
 					</tr>
 					{% endif %}

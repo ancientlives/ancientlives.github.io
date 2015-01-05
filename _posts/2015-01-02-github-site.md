@@ -5,7 +5,6 @@ layout: post-vertical
 
 categories:
 - blog
-- github-pages
 
 tags: general site github-pages
 year: 2015

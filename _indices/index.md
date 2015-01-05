@@ -1,5 +1,5 @@
 ---
-title: indices
+title: Indices
 author: ancientlives
 layout: default-vertical
 
@@ -15,17 +15,20 @@ summary: site indices for posts, media, and other content
 
 Current *ancientlives* content has been organised into the following groupings. 
 
-#### Content
-* [Tags](tags)
+#### Content - Site
+* [Site Tags](tags)
   
-  Tags assigned per blog post based upon content and theme.
+  Tags assigned per site document based upon content and theme.
 
-* [Categories](categories)
+* [Site Categories](categories)
   
-  Defined categories for blog posts.
+  Defined categories for site content.
 
-* Library (coming soon...)
+#### Content - Library
+* [Library Tags](tags/library)
 
-  Category groupings for library notes, media, and tutorials.
+	Tags assigned per Library document based upon content and theme.
+	
+* [Library Categories](categories/library)
 
-
+	Defined categories for Libary content.

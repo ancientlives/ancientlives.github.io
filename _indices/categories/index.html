@@ -13,6 +13,13 @@ published: true
 summary: an index of blog post categories
 ---
 
+<!--{{ site.collections }}-->
+
+{% for collection in site.collections %}
+{{ collection[0].docs }}
+<!--{{ collection[1].directory }}-->
+{% endfor %}
+
 {% capture get_items %}
  {% for cat in site.categories %}
    {{ cat | first }}

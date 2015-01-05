@@ -5,7 +5,6 @@ layout: post-vertical
 
 categories:
 - blog
-- indices
 
 tags: general indices site
 year: 2015

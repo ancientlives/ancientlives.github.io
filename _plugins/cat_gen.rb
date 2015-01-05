@@ -10,7 +10,7 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'cat_index.html')
       self.data['cat'] = cat
-      self.data['title'] = "Category <em>"+cat+"</em>"
+      self.data['title'] = cat
     end
   end
 

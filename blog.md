@@ -11,7 +11,7 @@ published: true
 summary: an index of site blog posts
 ---
 
-{% for post in site.posts %}
+{% for post in site.categories.blog %}
 * {{ post.date | date: "%d-%m-%Y" }} | [{{ post.title }}]({{ post.url }})
   
   {{ post.summary | replace: '<h3>','<h6>' | replace: '</h3>','</h6>' }}

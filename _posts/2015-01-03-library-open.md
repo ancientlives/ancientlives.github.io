@@ -5,7 +5,6 @@ layout: post-vertical
 
 categories:
 - blog
-- library
 
 tags: general site library
 year: 2015
