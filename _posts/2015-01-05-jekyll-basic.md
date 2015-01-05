@@ -1,0 +1,129 @@
+---
+title: Jekyll Basic Guide
+author: ancientlives
+layout: post-vertical
+
+categories:
+- library
+- notes
+
+tags: library notes dev site-building jekyll
+year: 2015
+month: 01
+day: 05
+published: true
+summary: basic guide to using Jekyll 
+---
+
+A basic guide to configuring Jekyll websites, and some of the more interesting options as well. Please see the 
+[Jekyll Documentation](http://jekyllrb.com/docs/usage/) for further information.
+
+#### Contents
+* Config
+* Boilerplate
+* Basic site
+* Adding site content
+* Auto generate builds
+* Jekyll server
+
+##### Config
+Configuration for Jekyll is completed using [YAML](http://www.yaml.org). The configurations are
+generally kept in a file called `_config.yml`.
+
+This config file allows us to specify settings, including
+
+* name
+* description
+* url (eg: a custom domain name)
+* paginate
+* flavour of markdown
+* type of permalink
+* highlighter (eg: pygments)
+
+*NB:* Pygments provides support for syntax highlighting in over 100 languages. This requires Python installed on your 
+system.
+
+##### Boilerplate
+For a very quick boilerplate site use the following commands,
+
+* `gem install jekyll`
+* `jekyll new mywebsite`
+* `cd mywebsite`
+* `jekyll server`
+
+This provisions a basic site template, which can be viewed at
+
+* http://localhost:4000
+
+This basic site includes a standard header, content body, footer, sample post, sample home page, about page, rss xml, 
+and much more. It's a good place to start work on a Jekyll site.
+
+##### Basic site
+A few initial steps to follow to create your own starter site for Jekyll.
+
+* create `_config.yml`
+  * save to root of site directory
+  * add name, description, url, markdown processor (if custom), permalink, pygments...
+* create `_includes` directory
+  * allows developers/theme designers to organise common files together, eg: site-wide header, footer...
+* create `_layout` directory
+  * stores textual/page layout files. This allows custom layouts for different files etc...
+* create `_posts` directory
+  * this will contain the Markdown or HTML/Textile files for blog posts
+  * NB: if you do not need a blog, this directory is not necessary
+
+We can now build the site to test Jekyll,
+
+`jekyll build`
+
+##### Adding site content
+Site content, including standard pages and blog posts, is created as simple text files. These text files are associated with
+content processors. 
+
+Jekyll processes these pages and copies them to the same location in your site relative to the defined root. This allows a 
+developer / designer to layout their site's structure before processing with Jekyll. For example,
+
+* contact/index.html is processed to `_site/contact/index.html`
+
+##### Front matter
+Jekyll sees *front matter* as a block of configuration details. This configuration can include information about the page, 
+including title, layout, and so forth. Front matter is defined as follows,
+
+```
+---
+title: Home Page
+layout: site-layout
+
+--- 
+```
+
+This configuration block is added to a page before any content blocks. Jekyll will not process a page without this *front matter*
+block.
+
+##### Auto generate builds
+Whilst building Jekyll is a straightforward process, it is tedious repeating the build command. Thankfully, Jekyll includes
+an auto generate option, which responds to file changes.
+
+This option can be activated from the terminal using the following command,
+
+* `jekyll build --watch`
+
+We can also specify the build destination, and the source and build destinations. For example,
+
+* `jekyll build --source yourdirectory --destination yourwebsite`
+
+Many of these configuration options can also be specified in the `_config.yml` file. For example, we can specify the source and
+destination directories for our site. Then we only need to issue the `jekyll build` command, and Jekyll automatically used the
+configuration specified in `_config.yml`.
+
+##### Jekyll server
+Jekyll also provides the option to run a local server, which can be called with the following command
+
+* `jekyll serve`
+
+This command needs to be called at the root of the directory containing your Jekyll website. It will then serve your website
+at the following url
+
+* `http://localhost:4000/`
+
+This option is very useful for testing the output and design for your new website.
