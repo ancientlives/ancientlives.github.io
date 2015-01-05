@@ -4,7 +4,7 @@ author: ancientlives
 layout: post-vertical
 
 categories:
-- general
+- blog
 - github-pages
 
 tags: general site github-pages

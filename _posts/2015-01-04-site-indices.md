@@ -4,9 +4,8 @@ author: ancientlives
 layout: post-vertical
 
 categories:
-- general
+- blog
 - indices
-- site
 
 tags: general indices site
 year: 2015

@@ -4,7 +4,7 @@ author: ancientlives
 layout: post-vertical
 
 categories:
-- general
+- blog
 
 tags: general site
 year: 2015

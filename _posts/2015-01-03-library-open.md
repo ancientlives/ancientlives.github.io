@@ -4,8 +4,7 @@ author: ancientlives
 layout: post-vertical
 
 categories:
-- general
-- site
+- blog
 - library
 
 tags: general site library

@@ -20,9 +20,9 @@ Current *ancientlives* content has been organised into the following groupings.
   
   Tags assigned per blog post based upon content and theme.
 
-* Categories (coming soon...)
-
-  Loose groupings for general site content
+* [Categories](categories)
+  
+  Defined categories for blog posts.
 
 * Library (coming soon...)
 
