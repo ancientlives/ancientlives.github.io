@@ -27,87 +27,117 @@
   </url>
   <url>
     <loc>http://localhost:4000/about/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/blog/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/contact/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/site-building/github-pages/github-pages-basic/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/site-building/github-pages/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/site-building/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/site-building/jekyll/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/indices/categories/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/indices/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/indices/tags/</loc>
-    <lastmod>2015-01-05T15:29:24+00:00</lastmod>
+    <lastmod>2015-01-05T15:30:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://localhost:4000/cats/cats/blog/index.html</loc>
+    <lastmod>2015-01-05T15:30:38+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://localhost:4000/cats/cats/github-pages/index.html</loc>
+    <lastmod>2015-01-05T15:30:38+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://localhost:4000/cats/cats/indices/index.html</loc>
+    <lastmod>2015-01-05T15:30:38+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://localhost:4000/cats/cats/library/index.html</loc>
+    <lastmod>2015-01-05T15:30:38+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://localhost:4000/cats/cats/notes/index.html</loc>
+    <lastmod>2015-01-05T15:30:38+00:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://localhost:4000/cats/cats/site-building/index.html</loc>
+    <lastmod>2015-01-05T15:30:38+00:00</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/general/index.html</loc>
