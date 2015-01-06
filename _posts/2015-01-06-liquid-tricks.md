@@ -15,10 +15,12 @@ published: true
 summary: tips and tricks for using Liquid
 ---
 
-A collection of tips and tricks for getting the most out of [Liquid](https://github.com/Shopify/liquid/wiki) template engine. These are predominantly used with [Jekyll](http://je$
+### Liquid - Tips and Tricks
+
+A collection of tips and tricks for getting the most out of [Liquid](https://github.com/Shopify/liquid/wiki) template engine. These are predominantly used with [Jekyll](http://jekyllrb.com). 
+
 #### Contents
 * Category and tags
-* Unique values
 
 ##### Category and tags
 
@@ -44,7 +46,7 @@ Code example,
  {{ get_items | split:' ' |  sort | join:' ' | number_of_words }}
 {% endcapture %}
 {% for item in (1..num_words) %}
- <li><a href="/tags/{{ get_items | split:' ' |  sort | join:' ' | truncatewords:item | remove:'...' |    split:' ' | last }}">{{ get_items | split:' ' |  sort | join:' ' | trunca$
+ <li><a href="/tags/{{ get_items | split:' ' |  sort | join:' ' | truncatewords:item | remove:'...' |    split:' ' | last }}">{{ get_items | split:' ' |  sort | join:' ' | truncatewords:item | remove:'...' |    split:' ' | last }}</a></li>
 {% endfor %}
 {% endraw %}
 ```
@@ -78,9 +80,9 @@ Code example,
   {% capture tags %}{{ tags }}|{{ item }}{% endcapture %}
  {% endunless %}
 {% endfor %}
-
+ 
 {% assign tag_array = tags | split: '|' | sort %}
-
+ 
 {% for tag in tag_array %}
 <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
 {% endfor %}
@@ -105,5 +107,6 @@ Code example,
 {% endfor %}
 {% endraw %}
 ```
+
 
 

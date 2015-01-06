@@ -103,13 +103,14 @@
 		<!-- content -->
 		<div id="content">
 		<h3>Liquid Tips and Tricks</h3>
-		<p>A collection of tips and tricks for getting the most out of <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> template engine. These are predominantly used with [Jekyll](http://je$</p>
+		<h3>Liquid - Tips and Tricks</h3>
+
+<p>A collection of tips and tricks for getting the most out of <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> template engine. These are predominantly used with <a href="http://jekyllrb.com">Jekyll</a>.</p>
 
 <h4>Contents</h4>
 
 <ul>
 <li>Category and tags</li>
-<li>Unique values</li>
 </ul>
 
 
@@ -155,7 +156,7 @@
  {{ get_items | split:' ' |  sort | join:' ' | number_of_words }}
 {% endcapture %}
 {% for item in (1..num_words) %}
- &lt;li&gt;&lt;a href="/tags/{{ get_items | split:' ' |  sort | join:' ' | truncatewords:item | remove:'...' |    split:' ' | last }}"&gt;{{ get_items | split:' ' |  sort | join:' ' | trunca$
+ &lt;li&gt;&lt;a href="/tags/{{ get_items | split:' ' |  sort | join:' ' | truncatewords:item | remove:'...' |    split:' ' | last }}"&gt;{{ get_items | split:' ' |  sort | join:' ' | truncatewords:item | remove:'...' |    split:' ' | last }}&lt;/a&gt;&lt;/li&gt;
 {% endfor %}
 </code></pre>
 
