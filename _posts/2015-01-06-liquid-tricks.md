@@ -19,6 +19,7 @@ A collection of tips and tricks for getting the most out of [Liquid](https://git
 
 #### Contents
 * Category and tags
+* Unique values
 
 ##### Category and tags
 
