@@ -21,3 +21,4 @@ This category includes a collection of notes on various static site builders, te
 #### Content
 * [Github Pages](github-pages)
 * [Jekyll](jekyll)
+* [Liquid](liquid)

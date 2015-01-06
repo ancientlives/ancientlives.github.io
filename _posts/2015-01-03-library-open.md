@@ -6,7 +6,7 @@ layout: post-vertical
 categories:
 - blog
 
-tags: general site library
+tags: general site
 year: 2015
 month: 01
 day: 03

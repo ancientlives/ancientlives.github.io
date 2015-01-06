@@ -14,10 +14,8 @@ summary: ancientlives is a personal collection of data, including notes, tutoria
 #### Recent Updates
 {% for post in site.posts limit: 5 %}
 * {{ post.date | date: "%d-%m-%Y" }} | [{{ post.title }}]({{ post.url }})
-  
-  {{ post.summary }}
 
-  <!--Tags: {% for tag in post.tags %} <a href="/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last != true %} | {% endif %} {% endfor %}-->
+  {{ post.summary }}
 {% endfor %}
 
 

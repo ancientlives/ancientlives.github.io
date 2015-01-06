@@ -21,4 +21,5 @@ This category includes a collection of disparate notes organised by language, te
 * [Site Building](site-building)
   * [GitHub Pages](site-building/github-pages)
   * [Jekyll](site-building/jekyll)
+  * [Liquid](site-building/liquid)
 

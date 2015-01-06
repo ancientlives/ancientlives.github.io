@@ -26,4 +26,4 @@ This collection of notes is for reference purposes only, and is not intended to 
 #### Contents
 * Introduction
 * Usage
-  * Basic
+  * [Basic](/library/notes/2015/01/05/jekyll-basic/)

@@ -1,0 +1,32 @@
+---
+title: Index - Library Categories
+author: ancientlives
+layout: index-vertical
+
+categories:
+- library
+
+published: true
+summary: an index of categories assigned to library content posts
+---
+
+{% capture cat_items %}
+{% for post in site.categories.library %}
+{% for cat in post.categories %}
+{{ cat }}
+{% endfor %}
+{% endfor %}
+{% endcapture %}
+{% assign array = cat_items | split: ' ' %}
+{% assign cats = array[1] %}
+{% for item in array %}
+{% unless cats contains item %}
+    {% capture cats %}{{ cats }}|{{ item }}{% endcapture %}
+    {% endunless %}
+ {% endfor %}
+ 
+ {% assign cat_array = cats | split: '|' | sort %}
+ 
+ {% for cat in cat_array %}
+ <li><a href="/cats/{{ cat }}">{{ cat }}</a></li>
+ {% endfor %}
