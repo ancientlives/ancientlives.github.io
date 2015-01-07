@@ -85,13 +85,19 @@ padding: 10px 25px 40px 25px;
 }
 
 #content h3 {
-padding: 7px 0 11px 0;
+padding: 0 0 11px 0;
 font-size: 19px;
 }
 
 #content h4 {
 padding-top: 10px;
 font-size: 16px;
+}
+
+#content .breadcrumb {
+background-color: #ffffff;
+padding: 20px 5px 0 5px;
+font-size: 12px;
 }
 
 #content table{

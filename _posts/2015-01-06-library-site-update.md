@@ -11,7 +11,7 @@ year: 2015
 month: 01
 day: 06
 published: true
-summary: updates added to site general site and library
+summary: updates added to general site and library
 menu: library-site-update
 ---
 
