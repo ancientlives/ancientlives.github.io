@@ -63,6 +63,11 @@ border-color: #dedede;
 background-color: #000000;
 }
 
+#bs-example-navbar-collapse-1 ul li.active a {
+color: #000000;
+text-decoration: underline;
+}
+
 /* main content wrapper div */
 #main-right {
 height: 100%;
@@ -92,14 +97,16 @@ font-size: 16px;
 #content table{
 border: 1px solid #eeeeee;
 padding: 10px;
+font-size: 13px;
 }
 
 #content table thead tr {
-background-color: #f9f9f9;
+/*background-color: #f9f9f9;*/
 }
 
 #content table thead tr th {
 padding: 5px;
+border: 1px solid #eeeeee;
 }
 
 #content table tbody tr td {
@@ -109,7 +116,8 @@ border: 1px solid #eeeeee;
 
 #content pre {
 background-color: #f9f9f9;
-border: 1px solid #dedede;
+border: 1px solid #eeeeee;
+overflow-x: auto;
 }
 
 #footer {

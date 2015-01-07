@@ -12,6 +12,7 @@ month: 01
 day: 01
 published: true
 summary: welcome to the new site and a new year, 2015.
+menu: new-year-new-site
 ---
 
 2015 starts with a new *ancientlives* site. It will include notes, tutorials, and other media

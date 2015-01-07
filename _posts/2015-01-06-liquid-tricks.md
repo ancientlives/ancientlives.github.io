@@ -13,6 +13,7 @@ month: 01
 day: 06
 published: true
 summary: tips and tricks for using Liquid
+menu: liquid-tricks
 ---
 
 A collection of tips and tricks for getting the most out of the [Liquid](https://github.com/Shopify/liquid/wiki) template engine. These are predominantly used with [Jekyll](http://jekyllrb.com). 

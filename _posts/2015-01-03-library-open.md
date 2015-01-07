@@ -12,6 +12,7 @@ month: 01
 day: 03
 published: true
 summary: library is now available
+menu: library-open
 ---
 
 The *ancientlives* library is now available for reference purposes. Initial notes and tutorials will focus upon development topics, but these will quickly be supplemented by other

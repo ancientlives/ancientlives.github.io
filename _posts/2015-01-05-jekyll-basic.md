@@ -13,6 +13,7 @@ month: 01
 day: 05
 published: true
 summary: basic guide to using Jekyll 
+menu: jekyll-basic
 ---
 
 A basic guide to configuring Jekyll websites, and some of the more interesting options as well. Please see the 

@@ -12,6 +12,7 @@ month: 1
 day: 2
 published: true
 summary: site now available on GitHub pages
+menu: github-site
 ---
 
 *ancientlives* is now available on [GitHub Pages](https://pages.github.com/), and is powered by the static site framework

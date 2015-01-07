@@ -13,6 +13,7 @@ month: 01
 day: 04
 published: true
 summary: setup Jekyll with GitHub Pages
+menu: github-pages
 ---
 
 A brief overview of setting up a Jekyll site with GitHub pages. Further details can be found on [GitHub](https://help.github.com/articles/using-jekyll-with-pages/).

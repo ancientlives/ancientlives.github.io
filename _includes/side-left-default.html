@@ -21,14 +21,17 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <small>
-      <ul class="list-group-item">
+     {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
+     {% capture post_location %}{{ page.url | remove_first:'/' | split:'/' | last }}{% endcapture %}
+     
+	<ul class="list-group-item">
       <h6 class="list-group-item-heading">Menu</h6>
-        <li class="list-unstyled"><a href="/">home</a></li>
-        <li class="list-unstyled"><a href="/about">about</a></li>
-        <li class="list-unstyled"><a href="/blog">blog</a></li>
-        <li class="list-unstyled"><a href="/contact">contact</a></li>
-        <li class="list-unstyled"><a href="/indices">indices</a></li>
-        <li class="list-unstyled"><a href="/library">library</a></li>
+        <li class="list-unstyled {% if location == '' %}active{% endif %}"><a href="/">home</a></li>
+        <li class="list-unstyled {% if location == 'about' %}active{% endif %}"><a href="/about">about</a></li>
+        <li class="list-unstyled {% if location == 'blog' %}active{% endif %}"><a href="/blog">blog</a></li>
+        <li class="list-unstyled {% if location == 'contact' %}active{% endif %}"><a href="/contact">contact</a></li>
+        <li class="list-unstyled {% if location == 'indices' %}active{% endif %}"><a href="/indices">indices</a></li>
+        <li class="list-unstyled {% if location == 'library' %}active{% endif %}"><a href="/library">library</a></li>
       </ul>
       </small>
     	
@@ -38,7 +41,7 @@
    		<small>
     	<h6 class="list-group-item-heading">Latest Blog Posts</h6>
     	{% for post in site.categories.blog limit: 5 %}
-    	<li class="list-unstyled"><a href="{{ post.url }}">{{ post.title }}</a></li>
+    	<li class="list-unstyled {% if post_location == post.menu %}active{% endif %}"><a href="{{ post.url }}">{{ post.title }}</a></li>
     	{% endfor %}
     	</small>
    		</ul>
@@ -50,7 +53,7 @@
    		<small>
     	<h6 class="list-group-item-heading">Latest Library Posts</h6>
     	{% for post in site.categories.library limit: 5 %}
-    	<li class="list-unstyled"><a href="{{ post.url }}">{{ post.title }}</a></li>
+    	<li class="list-unstyled {% if post_location == post.menu %}active{% endif %}"><a href="{{ post.url }}">{{ post.title }}</a></li>
     	{% endfor %}
     	</small>
    		</ul>
