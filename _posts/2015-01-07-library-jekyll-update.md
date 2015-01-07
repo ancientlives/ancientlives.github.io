@@ -15,4 +15,4 @@ summary: update added to jekyll in library
 menu: library-jekyll-update
 ---
 
-The *ancientlives* library has now been updated to include an introduction on [Jekyll](/library/notes/dev/site-building/jekyll/) section.
+The *ancientlives* library has now been updated to include an introduction on [Jekyll](/library/notes/2015/01/07/jekyll-intro/).
