@@ -95,7 +95,7 @@ Code example,
 
 ##### Unique values
 
-The following trick allows us to filter an array for unique values.. Hat-tip to a [Gist](https://gist.github.com/pepelsbey/9334494) by *pepelsbey*
+The following trick allows us to filter an array for unique values. Hat-tip to a [Gist](https://gist.github.com/pepelsbey/9334494) by *pepelsbey*
 
 Code example,
 
