@@ -15,11 +15,16 @@ published: true
 summary: tips and tricks for using Liquid
 ---
 
-A collection of tips and tricks for getting the most out of [Liquid](https://github.com/Shopify/liquid/wiki) template engine. These are predominantly used with [Jekyll](http://jekyllrb.com). 
+A collection of tips and tricks for getting the most out of the [Liquid](https://github.com/Shopify/liquid/wiki) template engine. These are predominantly used with [Jekyll](http://jekyllrb.com). 
 
-#### Contents
-* Category and tags
-* Unique values
+***
+
+Contents  |
+----------- |
+Category and tags |
+Unique values     |
+
+***
 
 ##### Category and tags
 

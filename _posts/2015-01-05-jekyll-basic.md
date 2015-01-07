@@ -18,13 +18,18 @@ summary: basic guide to using Jekyll
 A basic guide to configuring Jekyll websites, and some of the more interesting options as well. Please see the 
 [Jekyll Documentation](http://jekyllrb.com/docs/usage/) for further information.
 
-#### Contents
-* Config
-* Boilerplate
-* Basic site
-* Adding site content
-* Auto generate builds
-* Jekyll server
+***
+
+Contents  |
+----------- |
+Config |
+Boilerplate |
+Basic site |
+Adding site content |
+Auto generate builds |
+Jekyll server |
+
+***
 
 ##### Config
 Configuration for Jekyll is completed using [YAML](http://www.yaml.org). The configurations are

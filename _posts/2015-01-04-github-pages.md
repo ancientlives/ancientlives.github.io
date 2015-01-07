@@ -17,14 +17,19 @@ summary: setup Jekyll with GitHub Pages
 
 A brief overview of setting up a Jekyll site with GitHub pages. Further details can be found on [GitHub](https://help.github.com/articles/using-jekyll-with-pages/).
 
-#### Contents
-* Intro
-* Initial setup
-* Jekyll installation
-* Running Jekyll
-* Updating Jekyll
-* Configure Jekyll
-* Disable Jekyll
+***
+
+Contents |
+-----------|
+Intro |
+Initial setup |
+Jekyll installation |
+Running Jekyll |
+Updating Jekyll |
+Configure Jekyll |
+Disable Jekyll |
+
+***
 
 ##### Intro
 GitHub pages currently supports hosting sites using [Jekyll](http://jekyllrb.com) generated static sites. It also supports [Markdown](http://daringfireball.net/projects/markdown/)

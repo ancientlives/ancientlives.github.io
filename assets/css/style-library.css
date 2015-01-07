@@ -89,6 +89,29 @@ padding-top: 10px;
 font-size: 16px;
 }
 
+#content table{
+border: 1px solid #eeeeee;
+padding: 10px;
+}
+
+#content table thead tr {
+background-color: #f7f7f7;
+}
+
+#content table thead tr th {
+padding: 5px;
+}
+
+#content table tbody tr td {
+padding: 5px;
+border: 1px solid #eeeeee;
+}
+
+#content pre {
+background-color: #f9f9f9;
+border: 1px solid #dedede;
+}
+
 #footer {
 position: fixed;
 padding: 15px 0 0 0;
