@@ -25,6 +25,7 @@
 <body>
 	<!-- wrapper -->
 	<div class="wrapper">
+	<a id="top"></a>
 	<!-- side-left -->
 	<div id="side-left" class="col-xs-12 col-sm-3 col-md-3">
 	
@@ -115,16 +116,18 @@
 </thead>
 <tbody>
 <tr>
-<td>Category and tags </td>
+<td><a href="#cat-tags">Category and tags</a> </td>
 </tr>
 <tr>
-<td>Unique values     </td>
+<td><a href="#uniq-val">Unique values</a> </td>
 </tr>
 </tbody>
 </table>
 
 
 <hr />
+
+<p><a id="cat-tags"></a></p>
 
 <h5>Category and tags</h5>
 
@@ -136,7 +139,7 @@
 <li>loop through site tags
 
 <ul>
-<li>get each first tag</li>
+<li>get the string representation of the tag</li>
 </ul>
 </li>
 <li>capture number of words per tag list per post
@@ -223,6 +226,8 @@
 {% endfor %}
 </code></pre>
 
+<p><a id="uniq-val"></a></p>
+
 <h5>Unique values</h5>
 
 <p>The following trick allows us to filter an array for unique values. Hat-tip to a <a href="https://gist.github.com/pepelsbey/9334494">Gist</a> by <em>pepelsbey</em></p>
@@ -241,7 +246,7 @@
 </code></pre>
 
 		<hr />	
-		<p>Date: 06-01-2015 | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/liquid">liquid</a> </p>
+		<p>Date: 06-01-2015 | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/liquid">liquid</a>  | Anchor: <a href="#top">Top</a></p>
     	</div><!-- /content -->
     </div><!-- /main-right -->
 	<!-- footer -->

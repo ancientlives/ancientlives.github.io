@@ -21,17 +21,18 @@ A collection of tips and tricks for getting the most out of the [Liquid](https:/
 
 Contents  |
 ----------- |
-Category and tags |
-Unique values     |
+[Category and tags](#cat-tags) |
+[Unique values](#uniq-val) |
 
 ***
 
+<a id="cat-tags"></a>
 ##### Category and tags
 
 * The following logic allows us to retrieve post tags for the site.
   * capture all items
   * loop through site tags
-    * get each first tag
+    * get the string representation of the tag
   * capture number of words per tag list per post
     * split, sort, join, and save words
   * loop through each item in words
@@ -93,6 +94,7 @@ Code example,
 {% endraw %}
 ```
 
+<a id="uniq-val"></a>
 ##### Unique values
 
 The following trick allows us to filter an array for unique values. Hat-tip to a [Gist](https://gist.github.com/pepelsbey/9334494) by *pepelsbey*

@@ -5,6 +5,6 @@
 		<h3>{{ page.title }}</h3>
 		{{ content }}
 		<hr />	
-		<p>Date: {{ page.date | date: "%d-%m-%Y" }} | Author: {{ page.author }} | Tags: {% for tag in page.tags %} <a href="/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last != true %}, {% endif %} {% endfor %}</p>
+		<p>Date: {{ page.date | date: "%d-%m-%Y" }} | Author: {{ page.author }} | Tags: {% for tag in page.tags %} <a href="/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last != true %}, {% endif %} {% endfor %} | Anchor: <a href="#top">Top</a></p>
     	</div><!-- /content -->
     </div><!-- /main-right -->

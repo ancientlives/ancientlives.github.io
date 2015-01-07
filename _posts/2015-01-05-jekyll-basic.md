@@ -22,15 +22,16 @@ A basic guide to configuring Jekyll websites, and some of the more interesting o
 
 Contents  |
 ----------- |
-Config |
-Boilerplate |
-Basic site |
-Adding site content |
-Auto generate builds |
-Jekyll server |
+[Config](#config) |
+[Boilerplate](#boilerplate) |
+[Basic site](#basic) |
+[Adding site content](#adding) |
+[Auto generate builds](#auto) |
+[Jekyll server](#server) |
 
 ***
 
+<a id="config"></a>
 ##### Config
 Configuration for Jekyll is completed using [YAML](http://www.yaml.org). The configurations are
 generally kept in a file called `_config.yml`.
@@ -48,6 +49,7 @@ This config file allows us to specify settings, including
 *NB:* Pygments provides support for syntax highlighting in over 100 languages. This requires Python installed on your 
 system.
 
+<a id="boilerplate"></a>
 ##### Boilerplate
 For a very quick boilerplate site use the following commands,
 
@@ -63,6 +65,7 @@ This provisions a basic site template, which can be viewed at
 This basic site includes a standard header, content body, footer, sample post, sample home page, about page, rss xml, 
 and much more. It's a good place to start work on a Jekyll site.
 
+<a id="basic"></a>
 ##### Basic site
 A few initial steps to follow to create your own starter site for Jekyll.
 
@@ -81,6 +84,7 @@ We can now build the site to test Jekyll,
 
 `jekyll build`
 
+<a id="adding"></a>
 ##### Adding site content
 Site content, including standard pages and blog posts, is created as simple text files. These text files are associated with
 content processors. 
@@ -90,6 +94,7 @@ developer / designer to layout their site's structure before processing with Jek
 
 * contact/index.html is processed to `_site/contact/index.html`
 
+<a id="front"></a>
 ##### Front matter
 Jekyll sees *front matter* as a block of configuration details. This configuration can include information about the page, 
 including title, layout, and so forth. Front matter is defined as follows,
@@ -105,6 +110,7 @@ layout: site-layout
 This configuration block is added to a page before any content blocks. Jekyll will not process a page without this *front matter*
 block.
 
+<a id="auto"></a>
 ##### Auto generate builds
 Whilst building Jekyll is a straightforward process, it is tedious repeating the build command. Thankfully, Jekyll includes
 an auto generate option, which responds to file changes.
@@ -121,6 +127,7 @@ Many of these configuration options can also be specified in the `_config.yml` f
 destination directories for our site. Then we only need to issue the `jekyll build` command, and Jekyll automatically used the
 configuration specified in `_config.yml`.
 
+<a id="server"></a>
 ##### Jekyll server
 Jekyll also provides the option to run a local server, which can be called with the following command
 

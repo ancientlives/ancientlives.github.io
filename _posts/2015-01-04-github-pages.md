@@ -21,24 +21,27 @@ A brief overview of setting up a Jekyll site with GitHub pages. Further details 
 
 Contents |
 -----------|
-Intro |
-Initial setup |
-Jekyll installation |
-Running Jekyll |
-Updating Jekyll |
-Configure Jekyll |
-Disable Jekyll |
+[Intro](#intro) |
+[Initial setup](#initial) |
+[Jekyll installation](#installation) |
+[Running Jekyll](#running) |
+[Updating Jekyll](#updating) |
+[Configure Jekyll](#configure) |
+[Disable Jekyll](#disable) |
 
 ***
 
+<a id="intro"></a>
 ##### Intro
 GitHub pages currently supports hosting sites using [Jekyll](http://jekyllrb.com) generated static sites. It also supports [Markdown](http://daringfireball.net/projects/markdown/)
 which allows text to HTML conversion. It also supports standard HTML sites, although this requires opting out of the default Jekyll option.
 
+<a id="initial"></a>
 ##### Initial setup - Jekyll sites
 Sites hosted on GitHub pages, excluding opt-out HTML sites, are processed through Jekyll each time content is pushed to your GitHub Pages' repository. For user pages, and not
 project pages, content should be pushed to the `master` branch. Project pages should be pushed to the `gh-pages` branch of the project's repository.
 
+<a id="installation"></a>
 ##### Jekyll installation
 There is now a GitHub Pages specific install for Jekyll, which allows local testing before pushing content to your remote repository. Essentially, this eases potential issues
 by replicating locally the GitHub Pages build environment.
@@ -61,6 +64,7 @@ the above command. To install these terminal tools run the following command,
 
 * `xcode-select --install`
 
+<a id="running"></a>
 ##### Running Jekyll
 With this installation, we can now run Jekyll locally to match GitHub Pages' build server. To enable this option, we run Jekyll with Bundler using the following command
 
@@ -68,16 +72,19 @@ With this installation, we can now run Jekyll locally to match GitHub Pages' bui
 
 This will then serve your site locally at `http://localhost:4000`.
 
+<a id="updating"></a>
 ##### Updating Jekyll
 To ensure parity with the latest build server for GitHub Pages, we need to check for applicable updates. To update this install, we can run the following command
 
 * `bundle update`
 
+<a id="configure"></a>
 ##### Configure Jekyll
 As with a standard Jekyll site, we can configure most site setting using a `_config.yml` file. This should be saved to the root directory of your site.
 
 Frontmatter is also required, again as with a standard Jekyll site.
 
+<a id="disable"></a>
 ##### Disable Jekyll
 We can also choose to disable Jekyll for GitHub Pages by creating a file called `.nojekyll`, which is saved to the root directory of your site.
 
