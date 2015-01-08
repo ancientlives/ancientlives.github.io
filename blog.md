@@ -1,6 +1,7 @@
 ---
 title: Blog Posts
 layout: default-vertical
+permalink: /blog/
 
 categories:
 - blog
@@ -12,7 +13,7 @@ summary: an index of site blog posts
 ---
 
 {% for post in site.categories.blog %}
-* {{ post.date | date: "%d-%m-%Y" }} | [{{ post.title }}]({{ post.url }})
+* {{ post.date | date_to_string }} | [{{ post.title }}]({{ post.url }})
   
   {{ post.summary | replace: '<h3>','<h6>' | replace: '</h3>','</h6>' }}
   

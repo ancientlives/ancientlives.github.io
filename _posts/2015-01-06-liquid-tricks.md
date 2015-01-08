@@ -11,6 +11,7 @@ tags: library notes dev site-building liquid
 year: 2015
 month: 01
 day: 06
+update: 08 Jan 2015
 published: true
 summary: tips and tricks for using Liquid
 menu: liquid-tricks
@@ -24,6 +25,7 @@ Contents  |
 ----------- |
 [Category and tags](#cat-tags) |
 [Unique values](#uniq-val) |
+[Breadcrumbs](#breadcrumbs) |
 
 ***
 
@@ -112,6 +114,19 @@ Code example,
         {% capture tags %}{{ tags }}|{{ item }}{% endcapture %}
     {% endunless %}
 {% endfor %}
+{% endraw %}
+```
+
+<a id="breadcrumbs"></a>
+##### Breadcrumbs
+
+The following allows us to split a page URL to create an array of items for a page's breadcrumb listing.
+
+Code example,
+
+```
+{% raw %}
+{% assign url_array = page.url | remove_first:'/' | split: '/' %}
 {% endraw %}
 ```
 

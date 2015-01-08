@@ -1,6 +1,7 @@
 ---
 title: Contact
 layout: default-vertical
+permalink: /contact/
 
 categories:
 - general

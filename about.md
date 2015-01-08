@@ -1,6 +1,7 @@
 ---
 title: About
 layout: default-vertical
+permalink: /about/
 
 categories:
 - general

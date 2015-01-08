@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>ancientlives: site-building</title>
+    <title>ancientlives: Jekyll Intro</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,7 +59,7 @@
         <li class="list-unstyled "><a href="/blog">blog</a></li>
         <li class="list-unstyled "><a href="/contact">contact</a></li>
         <li class="list-unstyled "><a href="/indices">indices</a></li>
-        <li class="list-unstyled "><a href="/library">library</a></li>
+        <li class="list-unstyled active"><a href="/library">library</a></li>
       </ul>
       </small>
     	
@@ -89,7 +89,7 @@
    		<small>
     	<h6 class="list-group-item-heading">Latest Library Posts</h6>
     	
-    	<li class="list-unstyled "><a href="/library/notes/jekyll-intro">Jekyll Intro</a></li>
+    	<li class="list-unstyled active"><a href="/library/notes/jekyll-intro">Jekyll Intro</a></li>
     	
     	<li class="list-unstyled "><a href="/library/notes/liquid-tricks">Liquid Tips and Tricks</a></li>
     	
@@ -104,143 +104,101 @@
 		</div><!-- /.navbar-collapse -->  
 		     
 	</div><!-- /side-left -->
-	<!-- main-right -->
-	<div id="main-right" class="col-xs-9 col-sm-9 col-md-9 pull-right">
+    
+    
+    
+    <!-- main-right -->
+	<div id="main-right" class="col-xs-12 col-sm-9 col-md-9 pull-right">
 		<!-- content -->
 		<div id="content">
-			<h3>Content tag - site-building</h3>
-			<p><em>site posts tagged with the term 'site-building'</em></p>
-			<hr />
-			<table class="table table-bordered">
-			<tbody>
-			<thead>
-			<tr>
-			<th>date</th><th>title</th><th>summary</th><th>tags</th>
-			</tr>
-			</thead>
-						
-					
-					
-					
-					
-					
-						
-					
-					
-					
-					
-					
-					
-					
-					
-					<tr>
-					<td>07-01-2015</td>
-					<td><a href="/library/notes/jekyll-intro">Jekyll Intro</a></td>
-					<td>an introduction to Jekyll</td>
-					<td> <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  </td>
-					</td>
-					</tr>
-					
-					
-					
-					
-						
-					
-					
-					
-					
-					
-					
-					
-					
-					<tr>
-					<td>06-01-2015</td>
-					<td><a href="/library/notes/liquid-tricks">Liquid Tips and Tricks</a></td>
-					<td>tips and tricks for using Liquid</td>
-					<td> <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/liquid">liquid</a>  </td>
-					</td>
-					</tr>
-					
-					
-					
-					
-						
-					
-					
-					
-					
-					
-						
-					
-					
-					
-					
-					
-					
-					
-					
-					<tr>
-					<td>05-01-2015</td>
-					<td><a href="/library/notes/jekyll-basic">Jekyll Basic Guide</a></td>
-					<td>basic guide to using Jekyll</td>
-					<td> <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  </td>
-					</td>
-					</tr>
-					
-					
-					
-					
-						
-					
-					
-					
-					
-					
-					
-					
-						
-					
-					
-					
-					
-					
-					
-					
-					
-					<tr>
-					<td>04-01-2015</td>
-					<td><a href="/library/notes/github-pages">GitHub Pages basic setup</a></td>
-					<td>setup Jekyll with GitHub Pages</td>
-					<td> <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/github-pages">github-pages</a>  </td>
-					</td>
-					</tr>
-					
-					
-					
-					
-						
-					
-					
-					
-					
-					
-						
-					
-					
-					
-					
-					
-					
-					
-						
-					
-					
-					
-					
-					
-								
-				</tbody>
-			</table> 
+		
+		<ol class="breadcrumb">
+		
+		
+		<li><a href="/
+		
+		library/
+		
+		">library</a></li>
+		
+		
+		
+		<li><a href="/
+		
+		library/
+		
+		notes/
+		
+		">notes</a></li>
+		
+		
+		
+		<li class="active">jekyll-intro</li>
+		
+		
+		</ol>
+		<h3>Jekyll Intro</h3>
+		<p>A few brief notes on the static website builder <a href="http://jekyllrb.com">Jekyll</a>.</p>
+
+<hr />
+
+<table>
+<thead>
+<tr>
+<th>Contents </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#what">What is Jekyll?</a> </td>
+</tr>
+<tr>
+<td><a href="#benefits">Benefits of Jekyll</a> </td>
+</tr>
+<tr>
+<td><a href="#audience">Target audience for Jekyll</a> </td>
+</tr>
+</tbody>
+</table>
+
+
+<hr />
+
+<p><a id="what"></a></p>
+
+<h5>What is Jekyll?</h5>
+
+<p>Jekyll is a static website and blog builder. It is written in Ruby, and allows a developer
+to serve static files as a website. It can be hosted on multiple services, including Heroku,
+Amazon, GitHub, and even Dropbox. In effect, any HTTP server capable of serving files can run
+an entire Jekyll website.</p>
+
+<p><a id="benefits"></a></p>
+
+<h5>Benefits of Jekyll</h5>
+
+<p>Jekyll is also able to support high performance for its sites. This is one of the many benefits
+of serving static websites.</p>
+
+<p>Websites powered by Jekyll are also inherently secure. They are considerably harder to compromise than
+comparative Wordpress sites, another benefit of their static nature.</p>
+
+<p>However, a potential weakness may lie in the FTP requirments. These can, however, be mitigated depending
+upon your server setup and access.</p>
+
+<p><a id="audience"></a></p>
+
+<h5>Target audience for Jekyll</h5>
+
+<p>Some degree of experience and technical ability is naturally required to develop and implement Jekyll
+powered websites and resources. However, such perceived complication, if any, is more than outweighed
+by its inherent power and flexibility compared to competitors.</p>
+
+<p>For example, it is far simpler to add custom layouts to a Jekyll powered website than a comparative
+Wordpress site.</p>
+
+		<hr />	
+		<p>Created: 07 Jan 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  | Anchor: <a href="#top">Top</a></p>
     	</div><!-- /content -->
     </div><!-- /main-right -->
 	<!-- footer -->

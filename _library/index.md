@@ -21,7 +21,7 @@ personal interests.
 
 {% for post in site.categories.library %}
   <li>
-    {{ post.date | date: "%d-%m-%Y" }} | <a href="{{ post.url }}">{{ post.title }}</a>
+    {{ post.date | date_to_string }} | <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
 {% endfor %}
 
