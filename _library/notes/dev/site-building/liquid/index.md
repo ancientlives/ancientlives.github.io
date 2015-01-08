@@ -27,4 +27,4 @@ This collection of notes is for reference purposes only, and is not intended to 
 * Introduction
 * Usage
   * Basic
-  * [Tips and Tricks](/library/notes/2015/01/06/liquid-tricks/)
+  * [Tips and Tricks](/library/notes/liquid-tricks/)

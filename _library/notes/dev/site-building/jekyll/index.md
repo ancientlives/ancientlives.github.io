@@ -24,6 +24,6 @@ Jekyll enables the transformation of plain text into static websites and blogs. 
 This collection of notes is for reference purposes only, and is not intended to replace the official [documentation](http://jekyllrb.com/docs/home/).
 
 #### Contents
-* [Introduction](/library/notes/2015/01/07/jekyll-intro/)
+* [Introduction](/library/notes/jekyll-intro/)
 * Usage
-  * [Basic](/library/notes/2015/01/05/jekyll-basic/)
+  * [Basic](/library/notes/jekyll-basic/)
