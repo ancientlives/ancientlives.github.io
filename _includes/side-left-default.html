@@ -59,6 +59,33 @@
    		</ul>
 		</div><!--/list-group (posts) --> 
 		
+		{% if page.layout == "post-vertical" and location == 'library' %}
+		<!-- list-group (posts) -->
+    	<div class="list-group">
+   		<ul class="list-group-item">
+   		<small>
+    	<h6 class="list-group-item-heading">Related Posts</h6>
+    	
+    {% for post in site.posts %}
+        {% assign sameTagCount = 0 %}
+    	    {% for tag in post.tags %}
+        	  {% if page.tags contains tag %}
+                {% assign sameTagCount = sameTagCount | plus: 1 %}
+              {% endif %}
+            {% endfor %}
+        {% if sameTagCount > 3 %}
+          {% if post.title == page.title %}
+          {% else %}
+            <li class="list-unstyled"><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endif %}
+        {% endif %}
+    {% endfor %}
+    	
+    	</small>
+   		</ul>
+		</div><!--/list-group (posts) --> 
+		{% endif %}
+		
 		</div><!-- /.navbar-collapse -->  
 		     
 	</div><!-- /side-left -->
