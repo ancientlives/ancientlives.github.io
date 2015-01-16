@@ -3,9 +3,18 @@
 */
 
 body {
-font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-color:#333;
+font:13px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+color:#555;
 font-weight:300;
+}
+
+a {
+/*color: #6491b2;*/
+color: #21759b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+color: #454545;
 }
 
 div.wrapper {
@@ -40,14 +49,14 @@ border-bottom: 1px solid #eeeeee;
 
 /* customised nav */
 #side-left .navbar-default  {
-background-color: #ffffff;
+background-color: #21759b;
 border-bottom: 1px solid #eeeeee;
 padding: 10px;
 margin-bottom: 5px;
 }
 
 #side-left .navbar-default  a {
-color: #000000;
+color: #ffffff;
 }
 
 #side-left .navbar-collapse {
@@ -55,12 +64,23 @@ padding-left: 0;
 padding-right: 0;
 }
 
+/* navbar-default mods */
 #side-left .navbar-default .navbar-toggle {
-border-color: #dedede;
+border-color: #eeeeee;
+}
+
+#side-left .navbar-default .navbar-toggle:hover {
+border-color: #eeeeee;
+background-color: #aaaaaa;
+}
+
+#side-left .navbar-default .navbar-toggle:focus {
+border-color: #eeeeee;
+background-color: #1a3852;
 }
 
 #side-left .navbar-default .navbar-toggle .icon-bar {
-background-color: #000000;
+background-color: #ffffff;
 }
 
 #bs-example-navbar-collapse-1 ul li.active a {
@@ -86,12 +106,12 @@ padding: 10px 25px 40px 25px;
 
 #content h3 {
 padding: 0 0 11px 0;
-font-size: 19px;
+font-size: 18px;
 }
 
 #content h4 {
 padding-top: 10px;
-font-size: 16px;
+font-size: 15px;
 }
 
 #content .breadcrumb {
@@ -107,7 +127,7 @@ font-size: 13px;
 }
 
 #content table thead tr {
-/*background-color: #f9f9f9;*/
+background-color: #f2f2f2;
 }
 
 #content table thead tr th {
@@ -121,7 +141,7 @@ border: 1px solid #eeeeee;
 }
 
 #content pre{
-background-color: #f9f9f9;
+background-color: #f7f7f7;
 border: 1px solid #eeeeee;
 word-wrap: normal;
 overflow: auto;
@@ -131,7 +151,7 @@ overflow: auto;
 position: fixed;
 padding: 15px 0 0 0;
 bottom: 20px;
-font-size: 12px;
+font-size: 13px;
 }
 
 @media print, screen and (max-width: 768px) {
