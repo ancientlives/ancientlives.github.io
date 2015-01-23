@@ -28,7 +28,7 @@ Contents |
 
 <a id="intro"></a>
 ##### Introduction
-Jekyll accespts custom data, which is accessed via the *Liquid* template engine. It supports loading data from *YAML*, *JSON*, and *CSV* files,
+Jekyll accepts custom data, which is accessed via the *Liquid* template engine. It supports loading data from *YAML*, *JSON*, and *CSV* files,
 which are stored in `_data` directory. 
 
 *NB:* *CSV* files must contain a header row.
