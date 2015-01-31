@@ -26,6 +26,8 @@ Contents |
 [Data folder](#folder) |
 [Example usage](#usage) |
 
+***
+
 <a id="intro"></a>
 ##### Introduction
 Jekyll accepts custom data, which is accessed via the *Liquid* template engine. It supports loading data from *YAML*, *JSON*, and *CSV* files,

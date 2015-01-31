@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>ancientlives: Jekyll Basic Guide</title>
+    <title>ancientlives: Jekyll Collections</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -89,7 +89,7 @@
    		<small>
     	<h6 class="list-group-item-heading">Latest Library Posts</h6>
     	
-    	<li class="list-unstyled "><a href="/library/notes/jekyll-collections">Jekyll Collections</a></li>
+    	<li class="list-unstyled active"><a href="/library/notes/jekyll-collections">Jekyll Collections</a></li>
     	
     	<li class="list-unstyled "><a href="/library/notes/jekyll-data">Jekyll Data Files</a></li>
     	
@@ -143,7 +143,6 @@
             
         
           
-            <li class="list-unstyled"><a href="/library/notes/jekyll-collections">Jekyll Collections</a></li>
           
         
     
@@ -349,6 +348,7 @@
             
         
           
+            <li class="list-unstyled"><a href="/library/notes/jekyll-basic">Jekyll Basic Guide</a></li>
           
         
     
@@ -453,42 +453,38 @@
 		
 		
 		
-		<li class="active">jekyll-basic</li>
+		<li class="active">jekyll-collections</li>
 		
 		
 		</ol>
 				
 
-		<h3>Jekyll Basic Guide</h3>
-		<p>A basic guide to configuring Jekyll websites, and some of the more interesting options as well. Please see the
-<a href="http://jekyllrb.com/docs/usage/">Jekyll Documentation</a> for further information.</p>
+		<h3>Jekyll Collections</h3>
+		<p>An overview of using collections with Jekyll. Further information can be found on the <a href="http://jekyllrb.com/docs/collections/">Jekyll</a> website.</p>
 
 <hr />
 
 <table>
 <thead>
 <tr>
-<th>Contents  </th>
+<th>Contents </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="#config">Config</a> </td>
+<td><a href="#intro">Introduction</a> </td>
 </tr>
 <tr>
-<td><a href="#boilerplate">Boilerplate</a> </td>
+<td><a href="#using">Using collections</a> </td>
 </tr>
 <tr>
-<td><a href="#basic">Basic site</a> </td>
+<td><a href="#creating">Creating collections</a> </td>
 </tr>
 <tr>
-<td><a href="#adding">Adding site content</a> </td>
+<td><a href="#permalinks">Permalinks</a> </td>
 </tr>
 <tr>
-<td><a href="#auto">Auto generate builds</a> </td>
-</tr>
-<tr>
-<td><a href="#server">Jekyll server</a> </td>
+<td><a href="#liquid">Liquid integration</a> </td>
 </tr>
 </tbody>
 </table>
@@ -496,173 +492,123 @@
 
 <hr />
 
-<p><a id="config"></a></p>
+<p><a id="intro"></a></p>
 
-<h5>Config</h5>
+<h5>Introduction</h5>
 
-<p>Configuration for Jekyll is completed using <a href="http://www.yaml.org">YAML</a>. The configurations are
-generally kept in a file called <code>_config.yml</code>.</p>
+<p><em>NB:</em> Collections are currently listed as <em>unstable</em>, and the following API references may change.</p>
 
-<p>This config file allows us to specify settings, including</p>
+<p>Collections allow the organisation of content not necessarily suitable for <em>pages</em> or <em>posts</em>. They allow a developer/designer
+to define a new type of document, which can augment the standard functionality of <em>pages</em> and <em>posts</em>.</p>
 
-<ul>
-<li>name</li>
-<li>description</li>
-<li>url (eg: a custom domain name)</li>
-<li>paginate</li>
-<li>flavour of markdown</li>
-<li>type of permalink</li>
-<li>highlighter (eg: pygments)</li>
-</ul>
+<p><a id="using"></a></p>
 
+<h5>Using collections</h5>
 
-<p><em>NB:</em> Pygments provides support for syntax highlighting in over 100 languages. This requires Python installed on your
-system.</p>
+<p>Jekyll requires explicit listing of collections in a site's <code>_config.yml</code> file. For example,</p>
 
-<p><a id="boilerplate"></a></p>
-
-<h5>Boilerplate</h5>
-
-<p>For a very quick boilerplate site use the following commands,</p>
-
-<ul>
-<li><code>gem install jekyll</code></li>
-<li><code>jekyll new mywebsite</code></li>
-<li><code>cd mywebsite</code></li>
-<li><code>jekyll server</code></li>
-</ul>
-
-
-<p>This provisions a basic site template, which can be viewed at</p>
-
-<ul>
-<li>http://localhost:4000</li>
-</ul>
-
-
-<p>This basic site includes a standard header, content body, footer, sample post, sample home page, about page, rss xml,
-and much more. It's a good place to start work on a Jekyll site.</p>
-
-<p><a id="basic"></a></p>
-
-<h5>Basic site</h5>
-
-<p>A few initial steps to follow to create your own starter site for Jekyll.</p>
-
-<ul>
-<li>create <code>_config.yml</code>
-
-<ul>
-<li>save to root of site directory</li>
-<li>add name, description, url, markdown processor (if custom), permalink, pygments...</li>
-</ul>
-</li>
-<li>create <code>_includes</code> directory
-
-<ul>
-<li>allows developers/theme designers to organise common files together, eg: site-wide header, footer...</li>
-</ul>
-</li>
-<li>create <code>_layout</code> directory
-
-<ul>
-<li>stores textual/page layout files. This allows custom layouts for different files etc...</li>
-</ul>
-</li>
-<li>create <code>_posts</code> directory
-
-<ul>
-<li>this will contain the Markdown or HTML/Textile files for blog posts</li>
-<li>NB: if you do not need a blog, this directory is not necessary</li>
-</ul>
-</li>
-</ul>
-
-
-<p>We can now build the site to test Jekyll,</p>
-
-<p><code>jekyll build</code></p>
-
-<p><a id="adding"></a></p>
-
-<h5>Adding site content</h5>
-
-<p>Site content, including standard pages and blog posts, is created as simple text files. These text files are associated with
-content processors.</p>
-
-<p>Jekyll processes these pages and copies them to the same location in your site relative to the defined root. This allows a
-developer / designer to layout their site's structure before processing with Jekyll. For example,</p>
-
-<ul>
-<li>contact/index.html is processed to <code>_site/contact/index.html</code></li>
-</ul>
-
-
-<p><a id="front"></a></p>
-
-<h5>Front matter</h5>
-
-<p>Jekyll sees <em>front matter</em> as a block of configuration details. This configuration can include information about the page,
-including title, layout, and so forth. Front matter is defined as follows,</p>
-
-<pre><code>---
-title: Home Page
-layout: site-layout
-
---- 
+<pre><code>collections:
+- learning_collection
 </code></pre>
 
-<p>This configuration block is added to a page before any content blocks. Jekyll will not process a page without this <em>front matter</em>
-block.</p>
+<p>We can also add metadata to this record,</p>
 
-<p><a id="auto"></a></p>
+<pre><code>collections:
+learning_collection:
+output: true
+</code></pre>
 
-<h5>Auto generate builds</h5>
+<p><a id="creating"></a></p>
 
-<p>Whilst building Jekyll is a straightforward process, it is tedious repeating the build command. Thankfully, Jekyll includes
-an auto generate option, which responds to file changes.</p>
+<h5>Creating collections</h5>
 
-<p>This option can be activated from the terminal using the following command,</p>
+<p>Each collection requires its own directory, for example</p>
+
+<p><code>my_site/_learning_collection</code></p>
+
+<p>The directory's name must match the collection name specified in the <code>_config.yml</code> file with the addition of a preceding underscore character.</p>
+
+<p>Jekyll will read a file's <em>YAML</em> front matter, if it exists, otherwise it will add all content to the document's <code>content</code> attribute.</p>
+
+<p>Files can be rendered as child documents to the parent collection by setting <code>output: true</code> for a given collection in the site's <code>_config.yml</code>
+file. This allows developers / designers to create a specific directory structure for collection documents and files. For example,</p>
+
+<p><code>my_site/learning_collection/notes/overview.md</code></p>
+
+<p>The child document is rendered as <code>overview.html</code>, and the directory hierarchy is maintained. URL would be as follows,</p>
+
+<p><code>http://www.mysite.com/learning_collection/notes/overview.html</code></p>
+
+<p><a id="permalinks"></a></p>
+
+<h5>Permalinks</h5>
+
+<p>A collection's <em>Permalink</em> can also be customised in the <code>_config.yml</code> file. This allows a developer / designer to customise their site's URLs. A
+number of variables are available for this option, including</p>
 
 <ul>
-<li><code>jekyll build --watch</code></li>
+<li>collection</li>
+<li>name</li>
+<li>output_ext</li>
+<li>path</li>
+<li>title</li>
 </ul>
 
 
-<p>We can also specify the build destination, and the source and build destinations. For example,</p>
+<p><a id="liquid"></a></p>
+
+<h5>Liquid integration</h5>
+
+<p>The <code>site</code> Liquid variable can be used to access a collection. For example, we could access the <code>_learning_collection</code> using the following,</p>
+
+<p><code>site.learning_collection</code></p>
+
+<p>We can also use <code>site.collections</code> to access a collection's metadata, as specified in the <code>_config.yaml</code> file. We can access the following</p>
 
 <ul>
-<li><code>jekyll build --source yourdirectory --destination yourwebsite</code></li>
+<li>directory (full path)</li>
+<li>docs (array of collection documents)</li>
+<li>label (name of the collection)</li>
+<li>output (output setting)</li>
+<li><p>relative_directory (path to collection's source directory relative to site)</p>
+
+<p>  NB: This is currently one feature that is not working as expected. A quick fix is as follows,</p></li>
 </ul>
 
 
-<p>Many of these configuration options can also be specified in the <code>_config.yml</code> file. For example, we can specify the source and
-destination directories for our site. Then we only need to issue the <code>jekyll build</code> command, and Jekyll automatically used the
-configuration specified in <code>_config.yml</code>.</p>
+<pre><code>
+{% for collection in site.collections %}
+{{ collection[1] }}
+{{ collection[1].directory }}
+{% endfor %}
+</code></pre>
 
-<p><a id="server"></a></p>
+<pre><code>
+{{ collection[1] }}
+</code></pre>
 
-<h5>Jekyll server</h5>
+<p>outputs the content of the current loop counter's collection array, and</p>
 
-<p>Jekyll also provides the option to run a local server, which can be called with the following command</p>
+<pre><code class="`">
+ {{ collection[1].directory }}
+</code></pre>
+
+<p>outputs the directory. This can be used to output attributes for each collection.</p>
+
+<p>Each document, in addition to the standard <em>YAML</em> front matter, can use the following attributes</p>
 
 <ul>
-<li><code>jekyll serve</code></li>
+<li>collection (document's collection)</li>
+<li>content (unrendered content of the document following the <em>YAML</em> front matter)</li>
+<li>output (rendered content)</li>
+<li>path (full path to document's source)</li>
+<li>relative_path (path to document's source relative to site source)</li>
+<li>url (url of the rendered collection)</li>
 </ul>
 
-
-<p>This command needs to be called at the root of the directory containing your Jekyll website. It will then serve your website
-at the following url</p>
-
-<ul>
-<li><code>http://localhost:4000/</code></li>
-</ul>
-
-
-<p>This option is very useful for testing the output and design for your new website.</p>
 
 		<hr />	
-		<p>Created: 05 Jan 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  | Anchor: <a href="#top">Top</a></p>
+		<p>Created: 30 Jan 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  | Anchor: <a href="#top">Top</a></p>
     	</div><!-- /content -->	
     </div><!-- /main-right -->
 	<!-- footer -->
