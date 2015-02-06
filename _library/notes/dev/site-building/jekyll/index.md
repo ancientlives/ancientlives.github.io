@@ -26,7 +26,9 @@ This collection of notes is for reference purposes only, and is not intended to 
 #### Contents
 * [Introduction](/library/notes/jekyll-intro/)
 * [Blogging](/library/notes/jekyll-blogging/)
+* [Collections](/library/notes/jekyll-collections/)
 * [Config](/library/notes/jekyll-config/)
 * [Data](/library/notes/jekyll-data/)
+* [Directory Structure](/library/notes/jekyll-directory/)
 * Usage
   * [Basic](/library/notes/jekyll-basic/)

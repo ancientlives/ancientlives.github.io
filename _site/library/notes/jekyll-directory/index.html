@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>ancientlives: Jekyll Basic Guide</title>
+    <title>ancientlives: Jekyll Directory Structure</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -89,7 +89,7 @@
    		<small>
     	<h6 class="list-group-item-heading">Latest Library Posts</h6>
     	
-    	<li class="list-unstyled "><a href="/library/notes/jekyll-directory">Jekyll Directory Structure</a></li>
+    	<li class="list-unstyled active"><a href="/library/notes/jekyll-directory">Jekyll Directory Structure</a></li>
     	
     	<li class="list-unstyled "><a href="/library/notes/jekyll-collections">Jekyll Collections</a></li>
     	
@@ -143,7 +143,6 @@
             
         
           
-            <li class="list-unstyled"><a href="/library/notes/jekyll-directory">Jekyll Directory Structure</a></li>
           
         
     
@@ -385,6 +384,7 @@
             
         
           
+            <li class="list-unstyled"><a href="/library/notes/jekyll-basic">Jekyll Basic Guide</a></li>
           
         
     
@@ -489,42 +489,30 @@
 		
 		
 		
-		<li class="active">jekyll-basic</li>
+		<li class="active">jekyll-directory</li>
 		
 		
 		</ol>
 				
 
-		<h3>Jekyll Basic Guide</h3>
-		<p>A basic guide to configuring Jekyll websites, and some of the more interesting options as well. Please see the
-<a href="http://jekyllrb.com/docs/usage/">Jekyll Documentation</a> for further information.</p>
+		<h3>Jekyll Directory Structure</h3>
+		<p>A basic guide to using and modifying the directory structure of Jekyll. Please see the <a href="http://jekyllrb.com/docs/structure/">Jekyll Documentation</a>
+for more information.</p>
 
 <hr />
 
 <table>
 <thead>
 <tr>
-<th>Contents  </th>
+<th>Contents </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="#config">Config</a> </td>
+<td><a href="#intro">Introduction</a> </td>
 </tr>
 <tr>
-<td><a href="#boilerplate">Boilerplate</a> </td>
-</tr>
-<tr>
-<td><a href="#basic">Basic site</a> </td>
-</tr>
-<tr>
-<td><a href="#adding">Adding site content</a> </td>
-</tr>
-<tr>
-<td><a href="#auto">Auto generate builds</a> </td>
-</tr>
-<tr>
-<td><a href="#server">Jekyll server</a> </td>
+<td><a href="#basic">Basic layout</a> </td>
 </tr>
 </tbody>
 </table>
@@ -532,173 +520,65 @@
 
 <hr />
 
-<p><a id="config"></a></p>
+<p><a id="intro"></a></p>
 
-<h5>Config</h5>
+<h5>Introduction</h5>
 
-<p>Configuration for Jekyll is completed using <a href="http://www.yaml.org">YAML</a>. The configurations are
-generally kept in a file called <code>_config.yml</code>.</p>
+<p>In essence, Jekyll is a tool for processing text into a given format. For example, <a href="http://daringfireball.net/projects/markdown/">Markdown</a>, <a href="http://redcloth.org/textile">Textile</a>, or plain HTML
+processing.</p>
 
-<p>This config file allows us to specify settings, including</p>
-
-<ul>
-<li>name</li>
-<li>description</li>
-<li>url (eg: a custom domain name)</li>
-<li>paginate</li>
-<li>flavour of markdown</li>
-<li>type of permalink</li>
-<li>highlighter (eg: pygments)</li>
-</ul>
-
-
-<p><em>NB:</em> Pygments provides support for syntax highlighting in over 100 languages. This requires Python installed on your
-system.</p>
-
-<p><a id="boilerplate"></a></p>
-
-<h5>Boilerplate</h5>
-
-<p>For a very quick boilerplate site use the following commands,</p>
-
-<ul>
-<li><code>gem install jekyll</code></li>
-<li><code>jekyll new mywebsite</code></li>
-<li><code>cd mywebsite</code></li>
-<li><code>jekyll server</code></li>
-</ul>
-
-
-<p>This provisions a basic site template, which can be viewed at</p>
-
-<ul>
-<li>http://localhost:4000</li>
-</ul>
-
-
-<p>This basic site includes a standard header, content body, footer, sample post, sample home page, about page, rss xml,
-and much more. It's a good place to start work on a Jekyll site.</p>
+<p>Jekyll enables you to modify how site URLs appear, the display of data in the layout, and much more. By modifying layout files,
+designers and developers can change how these files are processed.</p>
 
 <p><a id="basic"></a></p>
 
-<h5>Basic site</h5>
+<h5>Basic layout</h5>
 
-<p>A few initial steps to follow to create your own starter site for Jekyll.</p>
+<p>Jekyll uses the following basic site layout,</p>
 
-<ul>
-<li>create <code>_config.yml</code>
-
-<ul>
-<li>save to root of site directory</li>
-<li>add name, description, url, markdown processor (if custom), permalink, pygments...</li>
-</ul>
-</li>
-<li>create <code>_includes</code> directory
-
-<ul>
-<li>allows developers/theme designers to organise common files together, eg: site-wide header, footer...</li>
-</ul>
-</li>
-<li>create <code>_layout</code> directory
-
-<ul>
-<li>stores textual/page layout files. This allows custom layouts for different files etc...</li>
-</ul>
-</li>
-<li>create <code>_posts</code> directory
-
-<ul>
-<li>this will contain the Markdown or HTML/Textile files for blog posts</li>
-<li>NB: if you do not need a blog, this directory is not necessary</li>
-</ul>
-</li>
-</ul>
-
-
-<p>We can now build the site to test Jekyll,</p>
-
-<p><code>jekyll build</code></p>
-
-<p><a id="adding"></a></p>
-
-<h5>Adding site content</h5>
-
-<p>Site content, including standard pages and blog posts, is created as simple text files. These text files are associated with
-content processors.</p>
-
-<p>Jekyll processes these pages and copies them to the same location in your site relative to the defined root. This allows a
-developer / designer to layout their site's structure before processing with Jekyll. For example,</p>
-
-<ul>
-<li>contact/index.html is processed to <code>_site/contact/index.html</code></li>
-</ul>
-
-
-<p><a id="front"></a></p>
-
-<h5>Front matter</h5>
-
-<p>Jekyll sees <em>front matter</em> as a block of configuration details. This configuration can include information about the page,
-including title, layout, and so forth. Front matter is defined as follows,</p>
-
-<pre><code>---
-title: Home Page
-layout: site-layout
-
---- 
+<pre><code>.
+|- _config.yml
+|- _drafts
+|   |- draft1.md
+|   |- draft2.md
+|- _includes
+|   |- header.html
+|   |- footer.html
+|- _layouts
+|   |- default.html
+|   |- post.html
+|- _posts
+|   |- 2014-02-24-post-1.md
+|   |- 2014-03-19-post-2.md
+|- _data
+|   |- members.yml
+|- _site
+|- index.html
 </code></pre>
 
-<p>This configuration block is added to a page before any content blocks. Jekyll will not process a page without this <em>front matter</em>
-block.</p>
-
-<p><a id="auto"></a></p>
-
-<h5>Auto generate builds</h5>
-
-<p>Whilst building Jekyll is a straightforward process, it is tedious repeating the build command. Thankfully, Jekyll includes
-an auto generate option, which responds to file changes.</p>
-
-<p>This option can be activated from the terminal using the following command,</p>
+<p>The above perform the following function in creating a Jekyll site,</p>
 
 <ul>
-<li><code>jekyll build --watch</code></li>
-</ul>
-
-
-<p>We can also specify the build destination, and the source and build destinations. For example,</p>
-
-<ul>
-<li><code>jekyll build --source yourdirectory --destination yourwebsite</code></li>
-</ul>
-
-
-<p>Many of these configuration options can also be specified in the <code>_config.yml</code> file. For example, we can specify the source and
-destination directories for our site. Then we only need to issue the <code>jekyll build</code> command, and Jekyll automatically used the
-configuration specified in <code>_config.yml</code>.</p>
-
-<p><a id="server"></a></p>
-
-<h5>Jekyll server</h5>
-
-<p>Jekyll also provides the option to run a local server, which can be called with the following command</p>
+<li>_config.yml = saves configuration data</li>
+<li>_drafts = unpublished posts, and the format does not include a date.</li>
+<li>_includes = sections of the site and pages, which can be reused.</li>
+<li>_layouts = templates that wrap posts. They are selected on an individual post bases, which is specified in the YAML front
+matter.</li>
+<li>_posts = content that is regularly updated, such as blog posts. A naming convention for these files exists, and it must
+follow the convention,
 
 <ul>
-<li><code>jekyll serve</code></li>
+<li><code>Year-Month-Day-title.markup eg: 2014-02-24-post.md</code></li>
+</ul>
+</li>
+<li>_data = well-formed site data may be stored in this directory. Jekyll will autoload <em>YAML</em> files.</li>
+<li>_site = this is the default directory for our Jekyll generated site</li>
+<li>index.html = must include a <em>YAML</em> front section for Jekyll transformation, and includes <code>.html</code>, <code>.md</code>, <code>.markdown</code> or <code>.textile</code> files in the site's root directory or other non-default directories.</li>
 </ul>
 
-
-<p>This command needs to be called at the root of the directory containing your Jekyll website. It will then serve your website
-at the following url</p>
-
-<ul>
-<li><code>http://localhost:4000/</code></li>
-</ul>
-
-
-<p>This option is very useful for testing the output and design for your new website.</p>
 
 		<hr />	
-		<p>Created: 05 Jan 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  | Anchor: <a href="#top">Top</a></p>
+		<p>Created: 06 Feb 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  | Anchor: <a href="#top">Top</a></p>
     	</div><!-- /content -->	
     </div><!-- /main-right -->
 	<!-- footer -->
