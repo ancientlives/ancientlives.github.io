@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>ancientlives: Liquid Tips and Tricks</title>
+    <title>ancientlives: Jekyll Pages</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -138,10 +138,11 @@
               
             
         	  
+                
+              
             
         
           
-            <li class="list-unstyled"><a href="/library/notes/jekyll-pages">Jekyll Pages</a></li>
           
         
     
@@ -172,6 +173,8 @@
               
             
         	  
+                
+              
             
         
           
@@ -206,6 +209,8 @@
               
             
         	  
+                
+              
             
         
           
@@ -240,6 +245,8 @@
               
             
         	  
+                
+              
             
         
           
@@ -274,6 +281,8 @@
               
             
         	  
+                
+              
             
         
           
@@ -308,6 +317,8 @@
               
             
         	  
+                
+              
             
         
           
@@ -342,6 +353,8 @@
               
             
         	  
+                
+              
             
         
           
@@ -368,11 +381,10 @@
               
             
         	  
-                
-              
             
         
           
+            <li class="list-unstyled"><a href="/library/notes/liquid-tricks">Liquid Tips and Tricks</a></li>
           
         
     
@@ -403,6 +415,8 @@
               
             
         	  
+                
+              
             
         
           
@@ -511,32 +525,29 @@
 		
 		
 		
-		<li class="active">liquid-tricks</li>
+		<li class="active">jekyll-pages</li>
 		
 		
 		</ol>
 				
 
-		<h3>Liquid Tips and Tricks</h3>
-		<p>A collection of tips and tricks for getting the most out of the <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> template engine. These are predominantly used with <a href="http://jekyllrb.com">Jekyll</a>.</p>
+		<h3>Jekyll Pages</h3>
+		<p>A brief overview of creating and using <em>pages</em> in <a href="http://jekyllrb.com">Jekyll</a></p>
 
 <hr />
 
 <table>
 <thead>
 <tr>
-<th>Contents  </th>
+<th>Contents </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="#cat-tags">Category and tags</a> </td>
+<td><a href="#home">Home page</a> </td>
 </tr>
 <tr>
-<td><a href="#uniq-val">Unique values</a> </td>
-</tr>
-<tr>
-<td><a href="#breadcrumbs">Breadcrumbs</a> </td>
+<td><a href="#add">Additional pages</a> </td>
 </tr>
 </tbody>
 </table>
@@ -544,138 +555,50 @@
 
 <hr />
 
-<p><a id="cat-tags"></a></p>
+<p><a id="home"></a></p>
 
-<h5>Category and tags</h5>
+<h5>Home page</h5>
 
-<ul>
-<li>The following logic allows us to retrieve post tags for the site.
+<p>As with most servers, Jekyll will look for <code>index.html</code> as the home page of the website. This page accepts site wide layouts, liquid
+templating, and other standard features of a Jekyll site.</p>
 
-<ul>
-<li>capture all items</li>
-<li>loop through site tags
+<p><a id="add"></a></p>
 
-<ul>
-<li>get the string representation of the tag</li>
-</ul>
-</li>
-<li>capture number of words per tag list per post
+<h5>Additional pages</h5>
+
+<p>There are two primary options for storing HTML files for pages, which are currently as follows,</p>
 
 <ul>
-<li>split, sort, join, and save words</li>
-</ul>
-</li>
-<li>loop through each item in words
-
-<ul>
-<li>output each tag</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>HTML files for each page can be stored in the site's root directory</li>
+<li>create a directory for each page, and add an index.html file</li>
 </ul>
 
 
-<p>Code example,</p>
+<p>Each of the above methods is fine, although the resultant URL will be different. A file in the root directory will output the same file relative
+to the site's root URL. A directory will output the root URL plus the directory for the page. For example,</p>
 
-<pre><code>
-{% capture get_items %}
- {% for tag in site.tags %}
-   {{ tag | first }}
- {% endfor %}
-{% endcapture %}
-{% capture num_words %}
- {{ get_items | split:' ' |  sort | join:' ' | number_of_words }}
-{% endcapture %}
-{% for item in (1..num_words) %}
- &lt;li&gt;&lt;a href="/tags/{{ get_items | split:' ' |  sort | join:' ' | truncatewords:item | remove:'...' |    split:' ' | last }}"&gt;{{ get_items | split:' ' |  sort | join:' ' | truncatewords:item | remove:'...' |    split:' ' | last }}&lt;/a&gt;&lt;/li&gt;
-{% endfor %}
-</code></pre>
+<p><code>http://www.yourdomain.com/about/</code></p>
 
-<ul>
-<li>The following logic enables filtering of post tags for a specified site category.
+<p>The file rendered will be <code>index.html</code> relative to the parent directory.</p>
 
-<ul>
-<li>capture all tag items</li>
-<li>loop through posts for a defined site category, eg: blog
+<p>Another option includes the use of Markdown files in the root directory. For example, a <code>contact.md</code> file will be built with the following URL</p>
 
-<ul>
-<li>loop through each tag per post and record the tag</li>
-</ul>
-</li>
-<li>assign tag items and split as necessary</li>
-<li>assign the first index of the assigned tag items
+<p><code>http://www.yourdomain.com/contact/</code></p>
 
-<ul>
-<li>loop through each item and check if item already exists in tags (this allows us to output unique tags)</li>
-<li>capture these tags</li>
-</ul>
-</li>
-<li>assign these tags, split, and then sort to correct order for strings (if applicable)</li>
-<li>loop through assigned tags and output each tag</li>
-</ul>
-</li>
-</ul>
+<p>This page will, therefore, be served as <code>index.html</code> relative to the parent directory.</p>
 
+<p>We can also add a specified <code>.html</code> page to a sub-directory of the site, and it will be built as follows,</p>
 
-<p>Code example,</p>
+<p><code>http://www.yourdomain.com/texts/text1/</code></p>
 
-<pre><code>
-{% capture tag_items %}
- {% for post in site.categories.library %}
- {% for tag in post.tags %}
-  {{ tag }}
- {% endfor %}
- {% endfor %}
-{% endcapture %}
-{% assign array = tag_items | split: ' ' %}
-{% assign tags = array[1] %}
-{% for item in array %}
- {% unless tags contains item %}
-  {% capture tags %}{{ tags }}|{{ item }}{% endcapture %}
- {% endunless %}
-{% endfor %}
+<p>The built file will be <code>index.html</code> relative to its parent directory. However, this file is stored as follows relative to the root directory,</p>
 
-{% assign tag_array = tags | split: '|' | sort %}
+<p><code>/texts/text1.html</code></p>
 
-{% for tag in tag_array %}
-&lt;li&gt;&lt;a href="/tags/{{ tag }}"&gt;{{ tag }}&lt;/a&gt;&lt;/li&gt;
-{% endfor %}
-</code></pre>
-
-<p><a id="uniq-val"></a></p>
-
-<h5>Unique values</h5>
-
-<p>The following trick allows us to filter an array for unique values. Hat-tip to a <a href="https://gist.github.com/pepelsbey/9334494">Gist</a> by <em>pepelsbey</em></p>
-
-<p>Code example,</p>
-
-<pre><code>
-{% assign array = 'c|c|b|b|a|a' | split: '|' %}
-{% assign tags = array[1] %}
-
-{% for item in array %}
-    {% unless tags contains item %}
-        {% capture tags %}{{ tags }}|{{ item }}{% endcapture %}
-    {% endunless %}
-{% endfor %}
-</code></pre>
-
-<p><a id="breadcrumbs"></a></p>
-
-<h5>Breadcrumbs</h5>
-
-<p>The following allows us to split a page URL to create an array of items for a page's breadcrumb listing.</p>
-
-<p>Code example,</p>
-
-<pre><code>
-{% assign url_array = page.url | remove_first:'/' | split: '/' %}
-</code></pre>
+<p>This will also work with Markdown files.</p>
 
 		<hr />	
-		<p>Created: 06 Jan 2015 | Updated: 08 Jan 2015 | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/liquid">liquid</a>  | Anchor: <a href="#top">Top</a></p>
+		<p>Created: 07 Feb 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  | Anchor: <a href="#top">Top</a></p>
     	</div><!-- /content -->	
     </div><!-- /main-right -->
 	<!-- footer -->

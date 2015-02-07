@@ -1,0 +1,65 @@
+---
+title: Jekyll Pages
+author: ancientlives
+layout: post-vertical
+
+categories:
+- library
+- notes
+
+tags: library notes dev site-building jekyll
+year: 2015
+month: 02
+day: 07
+published: true
+summary: an overview of Jekyll pages
+menu: jekyll-directory
+---
+
+A brief overview of creating and using *pages* in [Jekyll](http://jekyllrb.com)
+
+***
+
+Contents |
+-----------|
+[Home page](#home) |
+[Additional pages](#add) |
+
+***
+
+<a id="home"></a>
+##### Home page
+As with most servers, Jekyll will look for `index.html` as the home page of the website. This page accepts site wide layouts, liquid 
+templating, and other standard features of a Jekyll site.
+
+<a id="add"></a>
+##### Additional pages
+There are two primary options for storing HTML files for pages, which are currently as follows,
+
+* HTML files for each page can be stored in the site's root directory
+* create a directory for each page, and add an index.html file
+
+Each of the above methods is fine, although the resultant URL will be different. A file in the root directory will output the same file relative
+to the site's root URL. A directory will output the root URL plus the directory for the page. For example, 
+
+`http://www.yourdomain.com/about/`
+
+The file rendered will be `index.html` relative to the parent directory.
+
+Another option includes the use of Markdown files in the root directory. For example, a `contact.md` file will be built with the following URL
+
+`http://www.yourdomain.com/contact/`
+
+This page will, therefore, be served as `index.html` relative to the parent directory. 
+
+We can also add a specified `.html` page to a sub-directory of the site, and it will be built as follows,
+
+`http://www.yourdomain.com/texts/text1/`
+
+The built file will be `index.html` relative to its parent directory. However, this file is stored as follows relative to the root directory,
+
+`/texts/text1.html`
+
+This will also work with Markdown files.
+
+
