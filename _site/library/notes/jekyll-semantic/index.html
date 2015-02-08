@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>ancientlives: Jekyll Intro</title>
+    <title>ancientlives: Jekyll Semantic Options</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -89,7 +89,7 @@
    		<small>
     	<h6 class="list-group-item-heading">Latest Library Posts</h6>
     	
-    	<li class="list-unstyled "><a href="/library/notes/jekyll-semantic">Jekyll Semantic Options</a></li>
+    	<li class="list-unstyled active"><a href="/library/notes/jekyll-semantic">Jekyll Semantic Options</a></li>
     	
     	<li class="list-unstyled "><a href="/library/notes/jekyll-pages">Jekyll Pages</a></li>
     	
@@ -143,7 +143,6 @@
             
         
           
-            <li class="list-unstyled"><a href="/library/notes/jekyll-semantic">Jekyll Semantic Options</a></li>
           
         
     
@@ -395,6 +394,7 @@
             
         
           
+            <li class="list-unstyled"><a href="/library/notes/jekyll-intro">Jekyll Intro</a></li>
           
         
     
@@ -561,14 +561,14 @@
 		
 		
 		
-		<li class="active">jekyll-intro</li>
+		<li class="active">jekyll-semantic</li>
 		
 		
 		</ol>
 				
 
-		<h3>Jekyll Intro</h3>
-		<p>A few brief notes on the static website builder <a href="http://jekyllrb.com">Jekyll</a>.</p>
+		<h3>Jekyll Semantic Options</h3>
+		<p>A brief overview of the options for semantic organisation of data in <a href="http://jekyllrb.com/docs/">Jekyll</a></p>
 
 <hr />
 
@@ -580,13 +580,13 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#what">What is Jekyll?</a> </td>
+<td><a href="#intro">Introduction</a> </td>
 </tr>
 <tr>
-<td><a href="#benefits">Benefits of Jekyll</a> </td>
+<td><a href="#tagging">Tagging</a> </td>
 </tr>
 <tr>
-<td><a href="#audience">Target audience for Jekyll</a> </td>
+<td><a href="#cats">Categorisation</a> </td>
 </tr>
 </tbody>
 </table>
@@ -594,41 +594,42 @@
 
 <hr />
 
-<p><a id="what"></a></p>
+<p><a id="intro"></a></p>
 
-<h5>What is Jekyll?</h5>
+<h5>Introduction</h5>
 
-<p>Jekyll is a static website and blog builder. It is written in Ruby, and allows a developer
-to serve static files as a website. It can be hosted on multiple services, including Heroku,
-Amazon, GitHub, and even Dropbox. In effect, any HTTP server capable of serving files can run
-an entire Jekyll website.</p>
+<p>Jekyll offers a few basic options for creating a site's categories, and adding a folksonomy through tagging. Related information, such as posts,
+can also be determined from this categorisation.</p>
 
-<p><a id="benefits"></a></p>
+<p><a id="tagging"></a></p>
 
-<h5>Benefits of Jekyll</h5>
+<h5>Tagging</h5>
 
-<p>Jekyll is also able to support high performance for its sites. This is one of the many benefits
-of serving static websites.</p>
+<p>In the YAML front matter, we can add custom defined tags for a page, post etc. These can be called for the page itself when it is loaded. For
+example,</p>
 
-<p>Websites powered by Jekyll are also inherently secure. They are considerably harder to compromise than
-comparative Wordpress sites, another benefit of their static nature.</p>
+<pre><code>tags:
+- index
+- semantics
+- folksonomy
+</code></pre>
 
-<p>However, a potential weakness may lie in the FTP requirments. These can, however, be mitigated depending
-upon your server setup and access.</p>
+<p>and so on. We can then output these tags as follows,</p>
 
-<p><a id="audience"></a></p>
+<p><code>librarynotesdevsite-buildingjekyll</code></p>
 
-<h5>Target audience for Jekyll</h5>
+<p>We can also list all posts for a given tag. For example,</p>
 
-<p>Some degree of experience and technical ability is naturally required to develop and implement Jekyll
-powered websites and resources. However, such perceived complication, if any, is more than outweighed
-by its inherent power and flexibility compared to competitors.</p>
+<p><code>site.tags.tag</code></p>
 
-<p>For example, it is far simpler to add custom layouts to a Jekyll powered website than a comparative
-Wordpress site.</p>
+<p><a id="cats"></a></p>
+
+<h5>Categorisation</h5>
+
+<p>Defining categories for a page, post etc follows the same pattern as tagging.</p>
 
 		<hr />	
-		<p>Created: 07 Jan 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  | Anchor: <a href="#top">Top</a></p>
+		<p>Created: 08 Feb 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  | Anchor: <a href="#top">Top</a></p>
     	</div><!-- /content -->	
     </div><!-- /main-right -->
 	<!-- footer -->
