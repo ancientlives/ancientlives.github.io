@@ -30,5 +30,6 @@ This collection of notes is for reference purposes only, and is not intended to 
 * [Config](/library/notes/jekyll-config/)
 * [Data](/library/notes/jekyll-data/)
 * [Directory Structure](/library/notes/jekyll-directory/)
+* [Pages](/library/notes/jekyll-pages/)
 * Usage
   * [Basic](/library/notes/jekyll-basic/)
