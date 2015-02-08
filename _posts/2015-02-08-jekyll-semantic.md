@@ -47,7 +47,8 @@ tags:
 
 and so on. We can then output these tags as follows,
 
-`{{ page.tags }}`
+`{% raw %}{{ page.tags }}{% endraw %}`
+
 
 We can also list all posts for a given tag. For example,
 
