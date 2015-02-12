@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>ancientlives: Jekyll Semantic Options</title>
+    <title>ancientlives: Jekyll Templates</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -89,9 +89,9 @@
    		<small>
     	<h6 class="list-group-item-heading">Latest Library Posts</h6>
     	
-    	<li class="list-unstyled "><a href="/library/notes/jekyll-templates">Jekyll Templates</a></li>
+    	<li class="list-unstyled active"><a href="/library/notes/jekyll-templates">Jekyll Templates</a></li>
     	
-    	<li class="list-unstyled active"><a href="/library/notes/jekyll-semantic">Jekyll Semantic Options</a></li>
+    	<li class="list-unstyled "><a href="/library/notes/jekyll-semantic">Jekyll Semantic Options</a></li>
     	
     	<li class="list-unstyled "><a href="/library/notes/jekyll-pages">Jekyll Pages</a></li>
     	
@@ -143,7 +143,6 @@
             
         
           
-            <li class="list-unstyled"><a href="/library/notes/jekyll-templates">Jekyll Templates</a></li>
           
         
     
@@ -179,6 +178,7 @@
             
         
           
+            <li class="list-unstyled"><a href="/library/notes/jekyll-semantic">Jekyll Semantic Options</a></li>
           
         
     
@@ -597,14 +597,14 @@
 		
 		
 		
-		<li class="active">jekyll-semantic</li>
+		<li class="active">jekyll-templates</li>
 		
 		
 		</ol>
 				
 
-		<h3>Jekyll Semantic Options</h3>
-		<p>A brief overview of the options for semantic organisation of data in <a href="http://jekyllrb.com/docs/">Jekyll</a></p>
+		<h3>Jekyll Templates</h3>
+		<p>A brief overview of the options for templates in <a href="http://jekyllrb.com/docs/">Jekyll</a></p>
 
 <hr />
 
@@ -619,10 +619,19 @@
 <td><a href="#intro">Introduction</a> </td>
 </tr>
 <tr>
-<td><a href="#tagging">Tagging</a> </td>
+<td><a href="#filters">Filters</a> </td>
 </tr>
 <tr>
-<td><a href="#cats">Categorisation</a> </td>
+<td><a href="#includes">Tags - Includes</a> </td>
+</tr>
+<tr>
+<td><a href="#code">Tags - Code highlighting</a> </td>
+</tr>
+<tr>
+<td><a href="#post">Tags - Post URL</a> </td>
+</tr>
+<tr>
+<td><a href="#gist">Tags - Gist</a> </td>
 </tr>
 </tbody>
 </table>
@@ -634,38 +643,66 @@
 
 <h5>Introduction</h5>
 
-<p>Jekyll offers a few basic options for creating a site's categories, and adding a folksonomy through tagging. Related information, such as posts,
-can also be determined from this categorisation.</p>
+<p>Jekyll uses the <em>Liquid</em> temple engine to process templates. Liquid's standard tags and filters are supports, and there are a few useful filters
+and tags added by Jekyll itself. These are primarily for common tasks.</p>
 
-<p><a id="tagging"></a></p>
+<p><a id="filters"></a></p>
 
-<h5>Tagging</h5>
+<h5>Filters</h5>
 
-<p>In the YAML front matter, we can add custom defined tags for a page, post etc. These can be called for the page itself when it is loaded. For
-example,</p>
+<p>Template filters include date manipulation and formatting, array usage and manipulation, string manipulation and formatting, url formatting, and
+basic JSON usage. A full list is available at <a href="http://jekyllrb.com/docs/templates/">Jekyll</a>.</p>
 
-<pre><code>tags:
-- index
-- semantics
-- folksonomy
+<p><a id="includes"></a></p>
+
+<h5>Tags - Includes</h5>
+
+<p>This allows a developer to ember small code fragments in a file. It works in a similar fashion to PHP's <code>include</code>. For example,</p>
+
+<pre><code>
+{% include footer.html %}
 </code></pre>
 
-<p>and so on. We can then output these tags as follows,</p>
+<p>All include files need to be stored in the <code>_includes</code> directory in Jekyll.</p>
 
-<p><code>{{ page.tags }}</code></p>
+<p>Jekyll includes can also include parameters,</p>
 
-<p>We can also list all posts for a given tag. For example,</p>
+<pre><code>
+{% include footer.html param="copyright_year" %}
+</code></pre>
 
-<p><code>site.tags.tag</code></p>
+<p>which are then accessible via Liquid</p>
 
-<p><a id="cats"></a></p>
+<pre><code>
+{{ include.param }}
+</code></pre>
 
-<h5>Categorisation</h5>
+<p>We can also use <code>include_relative</code> to store an include file relative to the current file's path. However, this include will then only be available
+from that local directory. For example, if a file stored at <code>_posts/2014-12-31-file.md</code> uses the <code>include_relative</code> tag, the include file must be
+in the same directory of a sub-directory.</p>
 
-<p>Defining categories for a page, post etc follows the same pattern as tagging.</p>
+<p><a id="code"></a></p>
+
+<h5>Tags - Code highlighting</h5>
+
+<p>Jekyll supports syntax highlighting using <em>Pygments</em>, which supports over 100 languages. You can also use <em>Rouge</em>, if preferred. We can also force
+the highlighter to include line numbers for the highlighted code block.</p>
+
+<p><a id="post"></a></p>
+
+<h5>Tags - Post URL</h5>
+
+<p>It is possible to included a link to a post on your site, which includes the correct permalink URL for the post. This <code>post_url</code> tag can also be
+used to create a link to a site post in Markdown.</p>
+
+<p><a id="gist"></a></p>
+
+<h5>Tags - Gist</h5>
+
+<p>We can also embed GitHub Gists on a Jekyll site using the <code>gist</code> tag.</p>
 
 		<hr />	
-		<p>Created: 08 Feb 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  | Anchor: <a href="#top">Top</a></p>
+		<p>Created: 11 Feb 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  | Anchor: <a href="#top">Top</a></p>
     	</div><!-- /content -->	
     </div><!-- /main-right -->
 	<!-- footer -->
