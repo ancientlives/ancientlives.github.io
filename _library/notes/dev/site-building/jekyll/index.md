@@ -32,5 +32,6 @@ This collection of notes is for reference purposes only, and is not intended to 
 * [Directory Structure](/library/notes/jekyll-directory/)
 * [Pages](/library/notes/jekyll-pages/)
 * [Semantic Options](/library/notes/jekyll-semantic)
+* [Templates](/library/notes/jekyll-templates)
 * Usage
   * [Basic](/library/notes/jekyll-basic/)
