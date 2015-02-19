@@ -33,5 +33,6 @@ This collection of notes is for reference purposes only, and is not intended to 
 * [Pages](/library/notes/jekyll-pages/)
 * [Semantic Options](/library/notes/jekyll-semantic)
 * [Templates](/library/notes/jekyll-templates)
+* [Themes](/library/notes/jekyll-themes)
 * Usage
   * [Basic](/library/notes/jekyll-basic/)

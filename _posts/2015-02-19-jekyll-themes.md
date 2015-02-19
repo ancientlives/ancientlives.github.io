@@ -1,0 +1,72 @@
+---
+title: Jekyll Themes
+author: ancientlives
+layout: post-vertical
+
+categories:
+- library
+- notes
+
+tags: library notes dev site-building jekyll
+year: 2015
+month: 02
+day: 19
+published: true
+summary: an overview of Jekyll themes
+menu: jekyll-themes
+---
+
+A brief overview of the options for themes in [Jekyll](http://jekyllrb.com/docs/)
+
+***
+
+Contents |
+-----------|
+[Introduction](#intro) |
+[Bootstrap](#bootstrap) |
+[Layout](#layout) |
+[Include](#include) |
+[Scripts](#scripts) |
+[Highlighter](#highlighter) |
+
+***
+
+<a id="intro"></a>
+#### Introduction
+Jekyll, as with most web design, allows us to create our own site theming. We can incorporate existing JS libraries, icon 
+sets, CSS stylesheets, and much more.
+
+<a id="bootstrap"></a>
+##### Bootstrap
+[Bootstrap](http://getbootstrap.com) is a 'popular HTML, CSS, and JS framework for developing responsive, mobile first
+projects on the web'.
+
+To use Bootstrap within our theme, we can download the default [Bootstrap](http://getbootstrap.com/getting-started/#download)
+version, and add to our Jekyll site's root directory. 
+
+<a id="layout"></a>
+##### Layout
+To create our initial layout we save a `default.html` file to the `_layouts` folder. This becomes the default layout for our 
+site, and is used to style all of our posts and pages. It becomes the default template for site rendering.
+
+We design this template in the same manner as a standard HTML site page, but we use [Liquid](https://github.com/Shopify/liquid/wiki)
+template engine to insert custom data. For example, a site title, include files for a header and footer, and much more.
+
+<a id="include"></a>
+##### Include
+
+In a similar fashion to PHP's `include` statement, we can abstract aspects of a template, such as the header and footer markup,
+which allows us to use the same design across our whole site. These files are stored in the `_includes` directory in the root directory 
+of a Jekyll build.
+
+We can create, for example, an include for our header, footer, and sidebar. We can also include any other site wide material, including Bootstrap 
+specific requirements.
+
+<a id="scripts"></a>
+##### Scripts
+CSS and Javascript files can be stored in a specific directory, for example `assets`, which is then referenced in standard HTML fashion from within
+our template.
+
+<a id="highlighter"></a>
+##### Highlighter
+We can highlight code in our site content by turning on the `highlighter: pygments` option. We can also highlight Liquid code by simply wrapping it in a raw/endraw block. Liquid itself will then not process this code.
