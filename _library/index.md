@@ -19,7 +19,7 @@ personal interests.
 
 #### Latest Content
 
-{% for post in site.categories.library %}
+{% for post in site.categories.library limit: 5 %}
   <li>
     {{ post.date | date_to_string }} | <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
