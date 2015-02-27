@@ -18,6 +18,7 @@ summary: a collection of notes on various aspects of software development
 This category includes a collection of disparate notes organised by language, technology, tool, or development.
 
 #### Contents
+* [Git](git)
 * [Markdown](markdown)
 * [Site Building](site-building)
   * [GitHub Pages](site-building/github-pages)
