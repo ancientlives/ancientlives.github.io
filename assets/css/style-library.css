@@ -17,8 +17,8 @@ h1, h2, h3, h4, h5, h6 {
 color: #555555;
 }
 
-#content hr {
-border-color: #6491b2;
+hr {
+border-color: #dedede;
 }
 
 div.wrapper {
@@ -40,7 +40,7 @@ height: 100%;
 overflow-y: auto;
 margin-top: 0px;
 padding: 0;
-border-right: 1px solid #eeeeee;
+border-right: 1px solid #dedede;
 }
 
 #side-left .list-group-item {
@@ -48,13 +48,13 @@ border-radius: 0;
 border-left: 0;
 border-right: 0;
 border-top: 0;
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #dedede;
 }
 
 /* customised nav */
 #side-left .navbar-default  {
 background-color: #6491b2;
-border-bottom: 1px solid #eeeeee;
+border-bottom: 1px solid #dedede;
 padding: 10px;
 margin-bottom: 5px;
 }
@@ -70,16 +70,16 @@ padding-right: 0;
 
 /* navbar-default mods */
 #side-left .navbar-default .navbar-toggle {
-border-color: #eeeeee;
+border-color: #dedede;
 }
 
 #side-left .navbar-default .navbar-toggle:hover {
-border-color: #eeeeee;
+border-color: #dedede;
 background-color: #aaaaaa;
 }
 
 #side-left .navbar-default .navbar-toggle:focus {
-border-color: #eeeeee;
+border-color: #dedede;
 background-color: #21759b;
 }
 
@@ -125,7 +125,7 @@ font-size: 12px;
 }
 
 #content table{
-border: 1px solid #eeeeee;
+border: 1px solid #dedede;
 padding: 10px;
 font-size: 13px;
 }
@@ -136,17 +136,17 @@ background-color: #f2f2f2;
 
 #content table thead tr th {
 padding: 5px;
-border: 1px solid #eeeeee;
+border: 1px solid #dedede;
 }
 
 #content table tbody tr td {
 padding: 5px;
-border: 1px solid #eeeeee;
+border: 1px solid #dedede;
 }
 
 #content pre{
 background-color: #f7f7f7;
-border: 1px solid #eeeeee;
+border: 1px solid #dedede;
 word-wrap: normal;
 overflow: auto;
 }

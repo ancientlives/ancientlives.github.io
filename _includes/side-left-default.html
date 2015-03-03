@@ -38,36 +38,36 @@
     	{% if page.layout == "post-vertical" and location == 'library' %}
     	{% else %}
     	<!-- list-group (posts) -->
-    	<div class="list-group">
+    	<!--<div class="list-group">-->
+    	<small>
    		<ul class="list-group-item">
-   		<small>
     	<h6 class="list-group-item-heading">Latest Blog Posts</h6>
     	{% for post in site.categories.blog limit: 5 %}
     	<li class="list-unstyled {% if post_location == post.menu %}active{% endif %}"><a href="{{ post.url }}">{{ post.title }}</a></li>
     	{% endfor %}
-    	</small>
    		</ul>
-		</div><!--/list-group (posts) --> 
+   		</small>
+		<!--</div>--><!--/list-group (posts) --> 
 		{% endif %}
 		
 		
 		<!-- list-group (posts) -->
-    	<div class="list-group">
+    	<!--<div class="list-group">-->
+    	<small>
    		<ul class="list-group-item">
-   		<small>
     	<h6 class="list-group-item-heading">Latest Library Posts</h6>
     	{% for post in site.categories.library limit: 5 %}
     	<li class="list-unstyled {% if post_location == post.menu %}active{% endif %}"><a href="{{ post.url }}">{{ post.title }}</a></li>
     	{% endfor %}
-    	</small>
    		</ul>
-		</div><!--/list-group (posts) --> 
+   		</small>
+		<!--</div>--><!--/list-group (posts) --> 
 		
 		{% if page.layout == "post-vertical" and location == 'library' %}
 		<!-- list-group (posts) -->
-    	<div class="list-group">
+    	<!--<div class="list-group">-->
+    	<small>
    		<ul class="list-group-item">
-   		<small>
     	<h6 class="list-group-item-heading">Related Posts</h6>
 
     {% for post in site.posts %}
@@ -89,9 +89,9 @@
         {% endif %}
     {% endfor %}
     	</div>
-    	</small>
    		</ul>
-		</div><!--/list-group (posts) --> 
+   		</small>
+		<!--</div>--><!--/list-group (posts) --> 
 		{% endif %}
 		
 		</div><!-- /.navbar-collapse -->  
