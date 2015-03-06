@@ -17,5 +17,6 @@ summary: a collection of notes on various topics, ideas, and research interests
 This collection of notes has been developed as a record of current and past research, reading, and various personal interests.
 
 #### Contents
+* [CS](cs)
 * [Dev](dev)
 

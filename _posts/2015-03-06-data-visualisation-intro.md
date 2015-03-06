@@ -1,0 +1,83 @@
+---
+title: Intro to Data Visualisation
+author: ancientlives
+layout: post-vertical
+
+categories:
+- library
+- notes
+
+tags: library notes cs data-science
+year: 2015
+month: 03
+day: 06
+published: true
+summary: an overview of data visualisation in data science
+menu: data-visualisation-intro
+---
+
+A brief introduction to data visualisation in data science.
+
+***
+
+Contents |
+-----------|
+[Introduction](#intro) |
+[Types](#types) |
+
+***
+
+<a id="intro"></a>
+##### Introduction
+Data visualisation refers to the study of how to visually communicate and analyse
+data. It is still a relatively young discipline, relative to data in computer science 
+and data science. However, there are already some notable definitions of the discipline. 
+One of the better known and accepted examples is as follows,
+
+>"Data visualisation is the representation and presentation of data that exploits our visual perception in order to amplify cognition."
+>
+>Kirk, A. *Data Visualisation: A successful design process.* Packt Publishing. 2012.</small>
+
+Several variants of this general theme exist, however the underlying prmeise remains
+the same. Data visualisation is a visual representation of the underlying data. 
+The visualisation aims to impart a better understanding of this data and, by association,
+its relevant context. 
+
+There is, of course, an inherent flip-side to data visualisation. Without a correct 
+understanding of its application, it can simply impart a false perception, and 
+by association understanding, on the dataset. We run the risk of creating many examples
+of the standard *areal unit* problem, where a perception is based upon the creator's 
+base standard and potential bias.
+
+Our brains are inherently good at seeing what they want to see, and without due care and
+attention our visualisations can simply provide false summations of the data.
+
+Data visualisation also covers many disparate aspects, including infographics, 
+exploratory tools, dashboards, and so on. 
+
+<a id="types"></a>
+##### Types
+There are many different ways to visualise datasets, and as many ways to customise 
+a standard infographic.
+
+However, there are some standard examples that allow us to consider the nature of
+visualisations.  
+
+For example,
+
+* Infographics - well suited for representing large datasets of contextual information.
+These will often be used within projects more inclined to exploratory data analysis, 
+which tend to be more interactive and provide less guidance to the user. 
+
+There are some in the data science community who do not perceive infographics as proper data visualisation because they are designed to guide a user through a story with the main facts already highlighted. This is often seen in contrast to chart-based data visualisation, which present the story and the facts for the user to discover.
+
+**NB:** such classifications, whilst generally useful, still only provide tangible
+reference points. It is perceived that data visualisation, in its many disparate
+forms, is simply a variation between infographics, exploratory tools, charts, and 
+some data art. 
+
+* Exploratory visualisations - this aspect of data visualisation is more interested in the provision of tools to explore and interpret datasets. The visualisations can be represented either static or interactive. Therefore, from a user perspective these charts can be viewed either carefully, or simply become interactive representations to help discover new and interesting concepts. This interactivity may include the option for the user to filter the dataset, and thereby interact with the visualisation via manipulation of the data, and modify the resultant information represented from the data. This kind of project is often perceived as more objective and data oriented than other forms.
+
+* Dashboards - these are dense displays of charts. They are used to allow us to represent and understand the key *metrics* of a given issue as quickly and effective as possible.
+
+A good example is the display of server logs, website users, and business data within such dashboards. 

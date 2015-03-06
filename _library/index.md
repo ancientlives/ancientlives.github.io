@@ -31,6 +31,7 @@ Please consult the following categories for further information and available su
 
 #### Contents
 * [Notes](notes)
+  * [CS](notes/cs)
   * [Dev](notes/dev)
   
 
