@@ -36,7 +36,7 @@ A good example is the display of server logs, website users, and business data w
 
 >"A dashboard is a visual display of the most important information needed to achieve one or more objective; consolidated and arranged on a single screen so the ifnromation can be monitored at a glance."*
 >
-><small>Few, Stephen. *Information Dashboard Design: The Effective Visual Communication of Data.* O'Reilly Media. 2006.</small>
+> <small>Few, Stephen. *Information Dashboard Design: The Effective Visual Communication of Data.* O'Reilly Media. 2006.</small>
 
 So, dashboards are visual displays of information. They can contain text elements, but are primarily a visual display of data rendered as meaningful information. 
 
