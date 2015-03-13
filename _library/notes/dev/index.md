@@ -19,6 +19,8 @@ This category includes a collection of disparate notes organised by language, te
 
 #### Contents
 * [Git](git)
+* [JavaScript](javascript)
+  * [D3](javascript/d3)
 * [Markdown](markdown)
 * [Site Building](site-building)
   * [GitHub Pages](site-building/github-pages)
