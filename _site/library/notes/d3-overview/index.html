@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>ancientlives: Site hosting</title>
+    <title>ancientlives: D3 Overview</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,10 +56,10 @@
       <h6 class="list-group-item-heading">Menu</h6>
         <li class="list-unstyled "><a href="/">home</a></li>
         <li class="list-unstyled "><a href="/about">about</a></li>
-        <li class="list-unstyled active"><a href="/blog">blog</a></li>
+        <li class="list-unstyled "><a href="/blog">blog</a></li>
         <li class="list-unstyled "><a href="/contact">contact</a></li>
         <li class="list-unstyled "><a href="/indices">indices</a></li>
-        <li class="list-unstyled "><a href="/library">library</a></li>
+        <li class="list-unstyled active"><a href="/library">library</a></li>
       </ul>
       </small>
     	
@@ -92,7 +92,7 @@
    		<ul class="list-group-item">
     	<h6 class="list-group-item-heading">Latest Library Posts</h6>
     	
-    	<li class="list-unstyled "><a href="/library/notes/d3-overview">D3 Overview</a></li>
+    	<li class="list-unstyled active"><a href="/library/notes/d3-overview">D3 Overview</a></li>
     	
     	<li class="list-unstyled "><a href="/library/notes/d3-setup">D3 Setup</a></li>
     	
@@ -111,41 +111,99 @@
 		</div><!-- /.navbar-collapse -->  
 		     
 	</div><!-- /side-left -->
+ 
     
     
-    
-	
+
 	<!-- main-right -->
 	<div id="main-right" class="col-xs-12 col-sm-9 col-md-9 pull-right">
-	
 		<!-- content -->
 		<div id="content">
+		<!--breadcrumbs-->
 		
 		<ol class="breadcrumb">
 		
 		
 		<li><a href="/
 		
-		blog/
+		library/
 		
-		">blog</a></li>
+		">library</a></li>
 		
 		
 		
-		<li class="active">github-site</li>
+		<li><a href="/
+		
+		library/
+		
+		notes/
+		
+		">notes</a></li>
+		
+		
+		
+		<li class="active">d3-overview</li>
 		
 		
 		</ol>
 			
-		
-		<h3>Site hosting</h3>
-		<p><em>ancientlives</em> is now available on <a href="https://pages.github.com/">GitHub Pages</a>, and is powered by the static site framework
-<a href="http://jekyllrb.com">Jekyll</a>. The site template is based on <a href="http://getbootstrap.com/">Bootstrap</a> with a custom theme designed
-by <em>ancientlives</em>.</p>
+		<!--title, summary, content...-->
+		<h3>D3 Overview</h3>
+		<p><em>a brief overview of D3</em></p>
+		<hr />
+		<p>A quick overview of the <a href="http://d3js.org">D3</a> javascript library.</p>
+
+<hr />
+
+<table>
+<thead>
+<tr>
+<th>Contents </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#intro">Introduction</a> </td>
+</tr>
+</tbody>
+</table>
+
+
+<hr />
+
+<p><a id="intro"></a></p>
+
+<h5>Introduction</h5>
+
+<p>D3 is a custom javascript library designed for the manipulation of data centric documents. D3 uses a custom library with HTML, CSS, and SVG to create graphically rich, informative documents for the presentation of data. Essentially, it uses a data-driven approach to manipulate the document object model (DOM).</p>
+
+<p>By considering data relative to its visualisation, D3 allows us to manipulate DOM elements, and associated attributes, based on the available data items. This is, inherently, the essence of creating charts for visualising data.</p>
+
+<p>SVG, or <em>Scalable Vector Graphics</em>, can be included in a HTML page thereby becoming part of the DOM itself. SVG allows us to create a variety of shapes and visual representations, including rectangles, circles, lines, and more detailed, complex designs using polygons, dynamic images, text, and so on. We can then add colour to these DOM elements using CSS, or we can fill these shapes with the fill attribute from SVG itself.</p>
+
+<p>D3 can be used to create a variety of visualisations, including interactive charts and maps.</p>
+
+<p>D3 requires an underlying knowledge of JavaScript, CSS, and HTML.</p>
+
+<p>One of the fundamental concepts in D3 is that it manipulates DOM elements, thereby knowing  next to nothing about the visual representation of elements. For example, if we wanted to create a circle visualisation, we do not pass data to a <code>createCircle()</code> function. Instead, we should append a circle SVG element to the DOM node, and then set its attributes.</p>
+
+<p>For example,</p>
+
+<pre><code>d3.select('#circle').append('circle')
+    .attr('cx', 20)
+    .attr('cy', 20)
+    .attr('r', 20);
+</code></pre>
+
+<p>However, whilst this abstraction offers greater reusability of code etc, we also need to be aware that D3 only knows that we are appending a DOM element. Therefore, it is up to the developer to check the validity of the specified parent element, and that <em>cx, cy, and r</em> are, indeed, valid attributes for a circle.</p>
+
+<p>By following simple design patterns, D3 allows us to bind data to DOM elements to create a wide variety of visualisations and shapes. This allows us to create designs ranging from bar charts to scatterplots to interactive maps.</p>
+
+<p>Whilst D3 doesn't provide built-in functions for creating a bar chart etc, we can easily write our own reusable code for such requirements.</p>
 
 		<hr />	
-		<p>Created: 02 Jan 2015  | Author: ancientlives | Tags:  <a href="/tags/general">general</a>,   <a href="/tags/site">site</a>,   <a href="/tags/github-pages">github-pages</a>  | Anchor: <a href="#top">Top</a></p>
-    	</div><!-- /content -->	
+		<p>Created: 20 Mar 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/javascript">javascript</a>,   <a href="/tags/d3">d3</a>  | Anchor: <a href="#top">Top</a></p>
+    	</div><!-- /content -->
     </div><!-- /main-right -->
 	<!-- footer -->
 	<div id="footer" class="col-xs-12 col-sm-3 col-md-3 text-center">

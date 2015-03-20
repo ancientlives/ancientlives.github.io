@@ -1,7 +1,7 @@
 ---
 title: Intro to Data Visualisation
 author: ancientlives
-layout: post-vertical
+layout: library-article-vertical
 
 categories:
 - library

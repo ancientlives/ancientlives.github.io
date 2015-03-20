@@ -1,7 +1,7 @@
 ---
 title: Jekyll Data Files
 author: ancientlives
-layout: post-vertical
+layout: library-article-vertical
 
 categories:
 - library

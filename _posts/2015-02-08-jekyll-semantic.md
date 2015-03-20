@@ -1,7 +1,7 @@
 ---
 title: Jekyll Semantic Options
 author: ancientlives
-layout: post-vertical
+layout: library-article-vertical
 
 categories:
 - library

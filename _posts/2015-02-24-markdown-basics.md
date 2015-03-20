@@ -1,7 +1,7 @@
 ---
 title: Markdown Basics
 author: ancientlives
-layout: post-vertical
+layout: library-article-vertical
 
 categories:
 - library

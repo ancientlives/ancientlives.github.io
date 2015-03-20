@@ -1,7 +1,7 @@
 ---
 title: GitHub Pages basic setup
 author: ancientlives
-layout: post-vertical
+layout: library-article-vertical
 
 categories:
 - library

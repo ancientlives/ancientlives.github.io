@@ -20,4 +20,5 @@ summary: a collection of notes on the D3 JavaScript library
 This category includes a collection of notes on [D3](http://d3js.org) JavaScript library.
 
 #### Content
+* [Overview](/library/notes/d3-overview/)
 * [Setup](/library/notes/d3-setup/)

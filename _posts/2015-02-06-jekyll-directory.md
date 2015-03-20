@@ -1,7 +1,7 @@
 ---
 title: Jekyll Directory Structure
 author: ancientlives
-layout: post-vertical
+layout: library-article-vertical
 
 categories:
 - library
