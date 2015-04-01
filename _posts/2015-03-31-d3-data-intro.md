@@ -60,10 +60,10 @@ Effectively, in one statement we were able to select the element, append a new e
 So, the above D3 can be understood as follows
 
   * D3 - references the D3 object, so we can access its built-in methods
-  * .select("body") - this method accepts a CSS selector and returns the first instance of the matched selector in the document's DOM
-    * .selectAll() - **NB:** this method is a variant of the single *select*, and will return all of the matched CSS selectors in the DOM
-  * .append("p") - creates the specified new DOM element, and appends it to the end of the defined select CSS selector, just before the closing tag. So, in our example, it simply appends a *p* element to the end of the defined *body*.
-  * .text("new paragraph") - takes the defined string, "new paragraph", and adds it to the newly created *p* DOM element.
+  * `.select("body")` - this method accepts a CSS selector and returns the first instance of the matched selector in the document's DOM
+    * `.selectAll()` - **NB:** this method is a variant of the single *select*, and will return all of the matched CSS selectors in the DOM
+  * `.append("p")` - creates the specified new DOM element, and appends it to the end of the defined select CSS selector, just before the closing tag. So, in our example, it simply appends a *p* element to the end of the defined *body*.
+  * `.text("new paragraph")` - takes the defined string, "new paragraph", and adds it to the newly created *p* DOM element.
     * **NB:** if there is any existing content it will be overwritten by this newly inserted content
 
 The semi-colon naturally indicates the end of the statement block.
@@ -86,7 +86,7 @@ This can be inefficient for such a short chain, but if we start to grow our chai
 ##### Binding data
 D3 enables us to bind data to elements in the DOM. Binding is, effectively, associating data to specific elements. This allows us to reference those values later, so that we can apply required mapping rules.
 
-So, we use D3's **selection.data()** method to bind our data to DOM elements. However, we obviously need some data to bind, and a selection of DOM elements.
+So, we use D3's `selection.data()` method to bind our data to DOM elements. However, we obviously need some data to bind, and a selection of DOM elements.
 
 D3 is particularly flexible with data, and will happily accept various types. It will accept various types of arrays of numbers, strings, or object, and these can also include multidimensional arrays. It can also handle JSON, including GeoJSON, and will even accept CSV files. 
 
@@ -116,7 +116,7 @@ With our new data, we then need to decide upon a selector within our document. F
 d3.select("body").selectAll("p");
 ```
 
-However, what happens if the element we require does not yet exist. We then need to use a method called *enter()*. For example,
+However, what happens if the element we require does not yet exist. We then need to use a method called `enter()`. For example,
 
 ```
 d3.select("body").selectAll("p").data(dataset).enter().append("p").text("new paragraph");
@@ -124,7 +124,7 @@ d3.select("body").selectAll("p").data(dataset).enter().append("p").text("new par
 
 If we ran this code, we would get new paragraphs that match the total number of values currently available in the *dataset*. Effectively, its akin to looping through an array, and outputting a new paragraph for each value in the array.
 
-So, how does the **enter()** function work. Well, to create new, data-bound elements we need to use *enter()*. This method checks the current DOM selection, and the data being assigned to it. If there are more data values than matching DOM elements, it will simply create a new placeholder element for the data value. It then passes this placeholder on to the next step in the chain, which is *append()* in our code.
+So, how does the `enter()` function work. Well, to create new, data-bound elements we need to use `enter()`. This method checks the current DOM selection, and the data being assigned to it. If there are more data values than matching DOM elements, it will simply create a new placeholder element for the data value. It then passes this placeholder on to the next step in the chain, which is *append()* in our code.
 
 If we run the above code we can see the output text within our new paragraphs. However, the data from our dataset has also been assigned to the new paragraphs. This data value is assigned to each paragraph's **_data_** attribute.
 

@@ -232,253 +232,235 @@
   </url>
   <url>
     <loc>http://localhost:4000/about/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/blog/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/contact/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://localhost:4000/cats/blog/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>http://localhost:4000/cats/library/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>http://localhost:4000/cats/notes/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>http://localhost:4000/library/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/cs/data-science/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/cs/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/git/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/javascript/d3/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/javascript/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/markdown/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/site-building/github-pages/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/site-building/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/site-building/jekyll/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/dev/site-building/liquid/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/library/notes/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/indices/categories/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/indices/categories/library/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/indices/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/indices/posts/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/indices/tags/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/indices/tags/library/</loc>
-    <lastmod>2015-03-31T17:39:40-05:00</lastmod>
+    <lastmod>2015-04-01T15:11:10-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://localhost:4000/cats/blog/index.html</loc>
-    <lastmod>2015-03-31T11:27:25-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:58-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/cats/library/index.html</loc>
-    <lastmod>2015-03-31T11:27:25-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:58-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/cats/notes/index.html</loc>
-    <lastmod>2015-03-31T11:27:25-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:58-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/cs/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/d3/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/data-science/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/dev/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/general/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/git/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/github-pages/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/indices/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/javascript/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/jekyll/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/library/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/liquid/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/markdown/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/notes/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/site/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://localhost:4000/tags/site-building/index.html</loc>
-    <lastmod>2015-03-31T11:27:18-05:00</lastmod>
+    <lastmod>2015-03-31T17:40:52-05:00</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
