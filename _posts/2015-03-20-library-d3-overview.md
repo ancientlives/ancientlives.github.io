@@ -1,5 +1,5 @@
 ---
-title: D3 Overview Notes Added
+title: D3 Overview Note Added
 author: ancientlives
 layout: post-vertical
 

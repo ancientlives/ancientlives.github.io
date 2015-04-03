@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>ancientlives: D3 JavaScript</title>
+    <title>ancientlives: D3 Drawing Intro</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -92,7 +92,7 @@
    		<ul class="list-group-item">
     	<h6 class="list-group-item-heading">Latest Library Posts</h6>
     	
-    	<li class="list-unstyled "><a href="/library/notes/d3-drawing-intro">D3 Drawing Intro</a></li>
+    	<li class="list-unstyled active"><a href="/library/notes/d3-drawing-intro">D3 Drawing Intro</a></li>
     	
     	<li class="list-unstyled "><a href="/library/notes/d3-data-intro">D3 Data Intro</a></li>
     	
@@ -111,14 +111,15 @@
 		</div><!-- /.navbar-collapse -->  
 		     
 	</div><!-- /side-left -->
-	
+ 
     
     
-	
+
 	<!-- main-right -->
 	<div id="main-right" class="col-xs-12 col-sm-9 col-md-9 pull-right">
 		<!-- content -->
 		<div id="content">
+		<!--breadcrumbs-->
 		
 		<ol class="breadcrumb">
 		
@@ -141,64 +142,138 @@
 		
 		
 		
-		<li><a href="/
-		
-		library/
-		
-		notes/
-		
-		dev/
-		
-		">dev</a></li>
-		
-		
-		
-		<li><a href="/
-		
-		library/
-		
-		notes/
-		
-		dev/
-		
-		javascript/
-		
-		">javascript</a></li>
-		
-		
-		
-		<li class="active">d3</li>
+		<li class="active">d3-drawing-intro</li>
 		
 		
 		</ol>
-				
-				
-		<h3>D3 JavaScript</h3>
-		<p><em>a collection of notes on the D3 JavaScript library</em></p>
+			
+		<!--title, summary, content...-->
+		<h3>D3 Drawing Intro</h3>
+		<p><em>a brief introduction to basic drawing in D3</em></p>
 		<hr />
-		<p>This category includes a collection of notes on <a href="http://d3js.org">D3</a> JavaScript library.</p>
+		<p>A brief overview of drawing with data using the <a href="http://d3js.org/">D3</a> Javascript library.</p>
 
-<h4>Content</h4>
+<hr />
 
-<ul>
-<li><a href="/library/notes/d3-overview/">Overview</a></li>
-<li><a href="/library/notes/d3-setup/">Setup</a></li>
-<li>Data
+<table>
+<thead>
+<tr>
+<th>Contents </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#drawing">Drawing divs</a>   </td>
+</tr>
+<tr>
+<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="#attributes">Setting attributes</a>   </td>
+</tr>
+<tr>
+<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="#bars">Drawing the bars</a> </td>
+</tr>
+<tr>
+<td><a href="#data">Benefit of data</a> </td>
+</tr>
+<tr>
+<td><a href="#svg">Drawing SVGs</a> </td>
+</tr>
+<tr>
+<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="#createsvg">Create SVG</a> </td>
+</tr>
+</tbody>
+</table>
 
-<ul>
-<li><a href="/library/notes/d3-data-basic">Basic</a></li>
-<li><a href="/library/notes/d3-data-intro">Intro</a></li>
-</ul>
-</li>
-<li>Drawing
 
-<ul>
-<li><a href="/library/notes/d3-drawing-intro">Intro</a></li>
-</ul>
-</li>
-</ul>
+<hr />
 
+<p><a id="drawing"></a></p>
 
+<h5>Drawing divs</h5>
+
+<p>One of the easiest ways to draw a rectangle, for example, is with a HTML <code>div</code>. So, we now have an easy way to start drawing a bar chart for our stats.</p>
+
+<p>Although semantically incorrect, we could use this <code>div</code> to output our bars for a bar chart. The issue is the use of an empty <code>div</code> for purely visual effect.</p>
+
+<p>Using D3, to add a class to an empty element we can use the <code>selection.attr()</code> method.</p>
+
+<p><a id="attributes"></a></p>
+
+<h6>Setting attributes</h6>
+
+<p><code>attr()</code> is used to set an HTML attribute and its value on an element. After selecting the required element in the DOM, we can then assign an attributes as follows,</p>
+
+<pre><code>.attr("class", "barchart")
+</code></pre>
+
+<p>This will assign a <code>class</code> attribute to the selected element.</p>
+
+<p><a id="bars"></a></p>
+
+<h6>Drawing the bars</h6>
+
+<p>We can use D3 to draw a set of bars in divs as follows,</p>
+
+<pre><code>var dataset = [ 1, 2, 3, 4, 5 ];
+
+d3.select("body").selectAll("div")
+    .data(dataset)
+    .enter()
+    .append("div")
+    .attr("class", "bar");
+</code></pre>
+
+<p>The above sample outputs the values from our dataset with no space between them, effectively as a bar chart of equal height. However, we can modify the height of each representative bar by setting the height of each bar as a function of its corresponding data value. For example, we could append the following to the end of our chain</p>
+
+<pre><code>.style("height", function(d) {
+    return d + "px";
+});
+</code></pre>
+
+<p>We can also make each bar in our chart more clearly defined by modifying <em>style</em> as follows,</p>
+
+<pre><code>.style("height", function(d) {
+    var barHeight = d * 3;
+    return barHeight + "px";
+});
+</code></pre>
+
+<p><a id="data"></a></p>
+
+<h5>Benefit of data()</h5>
+
+<p>The <code>data()</code> function is smart enough to loop through all of the data it is given. For example, pass an array with 100 values, and it will simply loop through the full length of the data.</p>
+
+<p>As it loops through the data, it will then execute each method following in the chain, and update the context for the methods.</p>
+
+<p><a id="svg"></a></p>
+
+<h5>Drawing SVGs</h5>
+
+<p>Properties of SVG elements are specified as <em>attributes</em>. In effect, they are represented as property/value pairs within each element tag,</p>
+
+<pre><code>&lt;element property="value"&gt;...&lt;/element&gt;
+</code></pre>
+
+<p>SVG elements exist in the DOM, so we can still use D3's <code>append()</code> and <code>attr()</code> methods to create new HTML elements and, of course, set their attributes.</p>
+
+<p><a id="createsvg"></a></p>
+
+<h6>Create SVG</h6>
+
+<p>We now need to create an element for our SVG, which will allow us to draw and output all of our required shapes.</p>
+
+<pre><code>d3.select("body").append("svg");
+</code></pre>
+
+<p>This simply appends to the body an SVG element. However, it might be useful to encapsulate this new DOM element within a variable,</p>
+
+<pre><code>var svg = d3.select("body").append("svg');
+</code></pre>
+
+<p>This variable effectively works as a reference, which points to the newly created SVG object. This allows us to use this reference anytime we need to access this element in the DOM.</p>
+
+		<hr />	
+		<p>Created: 03 Apr 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/javascript">javascript</a>,   <a href="/tags/d3">d3</a>  | Anchor: <a href="#top">Top</a></p>
     	</div><!-- /content -->
     </div><!-- /main-right -->
 	<!-- footer -->

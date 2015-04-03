@@ -1,5 +1,5 @@
 ---
-title: D3 Setup Notes Added
+title: D3 Setup Note Added
 author: ancientlives
 layout: post-vertical
 

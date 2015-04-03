@@ -1,5 +1,5 @@
 ---
-title: D3 Data Intro Notes Added
+title: D3 Data Intro Note Added
 author: ancientlives
 layout: post-vertical
 

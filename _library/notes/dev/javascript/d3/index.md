@@ -25,3 +25,5 @@ This category includes a collection of notes on [D3](http://d3js.org) JavaScript
 * Data
   * [Basic](/library/notes/d3-data-basic)
   * [Intro](/library/notes/d3-data-intro)
+* Drawing
+  * [Intro](/library/notes/d3-drawing-intro)
