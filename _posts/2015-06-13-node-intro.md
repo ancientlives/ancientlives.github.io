@@ -84,7 +84,7 @@ but Javascript syntax already assumes events through its use of callbacks.
 everything will be blocked as it waits for it to finish.
 
 <a id="callbacks"></a>
-#####Callbacks
+##### Callbacks
 In most languages, you send an I/O query and wait until a result is returned before you can continue your code procedure.
 For example, if you submit a query to a database for a user ID, the server will pause that thread/process until the 
 database returns a result for the ID query. 

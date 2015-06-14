@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>ancientlives: Jekyll Collections</title>
+    <title>ancientlives: Node.js NPM</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -142,16 +142,16 @@
 		
 		
 		
-		<li class="active">jekyll-collections</li>
+		<li class="active">node-npm</li>
 		
 		
 		</ol>
 			
 		<!--title, summary, content...-->
-		<h3>Jekyll Collections</h3>
-		<p><em>an overview of Jekyll collections</em></p>
+		<h3>Node.js NPM</h3>
+		<p><em>a brief introduction to node package manager, NPM</em></p>
 		<hr />
-		<p>An overview of using collections with Jekyll. Further information can be found on the <a href="http://jekyllrb.com/docs/collections/">Jekyll</a> website.</p>
+		<p>A quick introduction to the node package manager (npm) for the <a href="https://nodejs.org">node.js</a> JavaScript library.</p>
 
 <hr />
 
@@ -163,19 +163,34 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#intro">Introduction</a> </td>
+<td><a href="#intro">Intro</a> </td>
 </tr>
 <tr>
-<td><a href="#using">Using collections</a> </td>
+<td>Installing </td>
 </tr>
 <tr>
-<td><a href="#creating">Creating collections</a> </td>
+<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="#npm">npm</a> </td>
 </tr>
 <tr>
-<td><a href="#permalinks">Permalinks</a> </td>
+<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="#modules">modules</a> </td>
 </tr>
 <tr>
-<td><a href="#liquid">Liquid integration</a> </td>
+<td><a href="#import">Importing modules</a> </td>
+</tr>
+<tr>
+<td><a href="#find">Find modules</a> </td>
+</tr>
+<tr>
+<td><a href="#docs">Find module documentation</a> </td>
+</tr>
+<tr>
+<td><a href="#bugs">View module bugs</a> </td>
+</tr>
+<tr>
+<td><a href="#source">Edit module source</a> </td>
+</tr>
+<tr>
+<td><a href="#depend">Specifying dependencies</a> </td>
 </tr>
 </tbody>
 </table>
@@ -185,121 +200,129 @@
 
 <p><a id="intro"></a></p>
 
-<h5>Introduction</h5>
+<h5>Intro</h5>
 
-<p><em>NB:</em> Collections are currently listed as <em>unstable</em>, and the following API references may change.</p>
-
-<p>Collections allow the organisation of content not necessarily suitable for <em>pages</em> or <em>posts</em>. They allow a developer/designer
-to define a new type of document, which can augment the standard functionality of <em>pages</em> and <em>posts</em>.</p>
-
-<p><a id="using"></a></p>
-
-<h5>Using collections</h5>
-
-<p>Jekyll requires explicit listing of collections in a site's <code>_config.yml</code> file. For example,</p>
-
-<pre><code>collections:
-- learning_collection
-</code></pre>
-
-<p>We can also add metadata to this record,</p>
-
-<pre><code>collections:
-learning_collection:
-output: true
-</code></pre>
-
-<p><a id="creating"></a></p>
-
-<h5>Creating collections</h5>
-
-<p>Each collection requires its own directory, for example</p>
-
-<p><code>my_site/_learning_collection</code></p>
-
-<p>The directory's name must match the collection name specified in the <code>_config.yml</code> file with the addition of a preceding underscore character.</p>
-
-<p>Jekyll will read a file's <em>YAML</em> front matter, if it exists, otherwise it will add all content to the document's <code>content</code> attribute.</p>
-
-<p>Files can be rendered as child documents to the parent collection by setting <code>output: true</code> for a given collection in the site's <code>_config.yml</code>
-file. This allows developers / designers to create a specific directory structure for collection documents and files. For example,</p>
-
-<p><code>my_site/learning_collection/notes/overview.md</code></p>
-
-<p>The child document is rendered as <code>overview.html</code>, and the directory hierarchy is maintained. URL would be as follows,</p>
-
-<p><code>http://www.mysite.com/learning_collection/notes/overview.html</code></p>
-
-<p><a id="permalinks"></a></p>
-
-<h5>Permalinks</h5>
-
-<p>A collection's <em>Permalink</em> can also be customised in the <code>_config.yml</code> file. This allows a developer / designer to customise their site's URLs. A
-number of variables are available for this option, including</p>
+<p><strong>npm</strong> is a package manager for the node.js JavaScript library. Developers can easily use <strong>npm</strong> to share and reuse modules in node.js applications. <strong>npm</strong> can also be used to share complete node.js applications. Example modules might include,</p>
 
 <ul>
-<li>collection</li>
-<li>name</li>
-<li>output_ext</li>
-<li>path</li>
-<li>title</li>
+<li>Markup, YAML etc parsers</li>
+<li>database connectors</li>
 </ul>
 
 
-<p><a id="liquid"></a></p>
+<p>and many more.</p>
 
-<h5>Liquid integration</h5>
+<p><a id="npm"></a></p>
 
-<p>The <code>site</code> Liquid variable can be used to access a collection. For example, we could access the <code>_learning_collection</code> using the following,</p>
+<h5>Installing - npm</h5>
 
-<p><code>site.learning_collection</code></p>
+<p><strong>npm</strong> is included with the default installers available at the <a href="https://nodejs.org">node.js</a> website. For further information, and other install options, please consult the <a href="https://www.npmjs.com">npmjs</a> website.</p>
 
-<p>We can also use <code>site.collections</code> to access a collection's metadata, as specified in the <code>_config.yaml</code> file. We can access the following</p>
+<p>To test whether <strong>npm</strong> is installed, simply issue the following command</p>
+
+<p><code>npm</code></p>
+
+<p>This should output some helpful information if <strong>npm</strong> is currently installed.</p>
+
+<p><strong>NB:</strong> on a Unix system, such as OS X or Linux, it is best to avoid installing <strong>npm</strong> with <code>sudo</code> privileges.</p>
+
+<p><a id="modules"></a></p>
+
+<h5>Installing - modules</h5>
+
+<p>To install existing <strong>npm</strong> modules, use the following type of command</p>
+
+<p><code>npm install express</code></p>
+
+<p>This will install the module named <code>express</code> in the current directory. It will act as a local installation within the current directory, installing in a folder called <code>node_modules</code>. This is the default behaviour for current installs.</p>
+
+<p>However, we can also specify a global install for modules. For example, we may wish to install the <strong>express</strong> module with global scope</p>
+
+<p><code>npm install -g express</code></p>
+
+<p>The <code>-g</code> flag specifies the required global install.</p>
+
+<p><a id="import"></a></p>
+
+<h5>Importing modules</h5>
+
+<p>To import modules in our node.js code we can use the following,</p>
+
+<pre><code>var module = require('express');
+</code></pre>
+
+<p>When we run this application, it will look for the required module library and its source code.</p>
+
+<p><a id="find"></a></p>
+
+<h5>Find modules</h5>
+
+<p>The official online search tool for <strong>npm</strong> can be found at <a href="https://www.npmjs.com/">npmjs</a>. Top packages include options such as</p>
 
 <ul>
-<li>directory (full path)</li>
-<li>docs (array of collection documents)</li>
-<li>label (name of the collection)</li>
-<li>output (output setting)</li>
-<li><p>relative_directory (path to collection's source directory relative to site)</p>
-
-<p>  NB: This is currently one feature that is not working as expected. A quick fix is as follows,</p></li>
+<li>browserify</li>
+<li>express</li>
+<li>grunt</li>
+<li>bower</li>
+<li>karma</li>
 </ul>
 
 
-<pre><code>
-{% for collection in site.collections %}
-{{ collection[1] }}
-{{ collection[1].directory }}
-{% endfor %}
+<p>and many more...</p>
+
+<p>We can also search for node modules directly from the terminal using the following command,</p>
+
+<p><code>npm search express</code></p>
+
+<p>This will return results for module names and descriptions.</p>
+
+<p><a id="docs"></a></p>
+
+<h5>Find module documentation</h5>
+
+<p>Once a module has been installed, we can view its documentation as follows,</p>
+
+<p><code>npm docs express</code></p>
+
+<p><a id="bugs"></a></p>
+
+<h5>View module bugs</h5>
+
+<p>We can also view the current documented bugs for a module using the following command,</p>
+
+<p><code>npm bugs express</code></p>
+
+<p><a id="source"></a></p>
+
+<h5>Edit module source</h5>
+
+<p>If we need to view the source code for a module, we can simply issue the following command</p>
+
+<p><code>npm edit express</code></p>
+
+<p><a id="depend"></a></p>
+
+<h5>Specifying dependencies</h5>
+
+<p>For node.js applications, we can ease their installation by specifying any required dependencies in an associated <code>package.json</code> file. This allows us as developers to simply specify the modules to install for our application, which can then be run using the following command</p>
+
+<p><code>npm install</code></p>
+
+<p>This helps reduce the need to install each module individually, and helps other users install an application as quickly as possible. Also, our application's dependencies are stored in one place.</p>
+
+<p>An example <code>package.json</code> file might be as follows,</p>
+
+<pre><code>{
+"name": "app" 
+"version": "0.0.1"
+"dependencies": {
+  "underscore": "-1.2.1"
+}
+}
 </code></pre>
-
-<pre><code>
-{{ collection[1] }}
-</code></pre>
-
-<p>outputs the content of the current loop counter's collection array, and</p>
-
-<pre><code class="`">
- {{ collection[1].directory }}
-</code></pre>
-
-<p>outputs the directory. This can be used to output attributes for each collection.</p>
-
-<p>Each document, in addition to the standard <em>YAML</em> front matter, can use the following attributes</p>
-
-<ul>
-<li>collection (document's collection)</li>
-<li>content (unrendered content of the document following the <em>YAML</em> front matter)</li>
-<li>output (rendered content)</li>
-<li>path (full path to document's source)</li>
-<li>relative_path (path to document's source relative to site source)</li>
-<li>url (url of the rendered collection)</li>
-</ul>
-
 
 		<hr />	
-		<p>Created: 30 Jan 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  | Anchor: <a href="#top">Top</a></p>
+		<p>Created: 14 Jun 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/javascript">javascript</a>,   <a href="/tags/node">node</a>  | Anchor: <a href="#top">Top</a></p>
     	</div><!-- /content -->
     </div><!-- /main-right -->
 	<!-- footer -->
