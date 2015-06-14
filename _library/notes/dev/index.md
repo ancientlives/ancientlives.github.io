@@ -22,6 +22,7 @@ This category includes a collection of disparate notes organised by language, te
 * [JavaScript](javascript)
   * [D3](javascript/d3)
   * [Node.js](javascript/node)
+  * [React](javascript/react)
 * [Markdown](markdown)
 * [Site Building](site-building)
   * [GitHub Pages](site-building/github-pages)

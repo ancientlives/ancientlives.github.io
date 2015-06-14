@@ -53,7 +53,8 @@ border-bottom: 1px solid #dedede;
 
 /* customised nav */
 #side-left .navbar-default  {
-background-color: #6491b2;
+/*background-color: #6491b2;*/
+background-color: #4990a7;
 border-bottom: 1px solid #dedede;
 padding: 10px;
 margin-bottom: 5px;
@@ -109,7 +110,7 @@ padding: 10px 25px 40px 25px;
 }
 
 #content h3 {
-padding: 0 0 11px 0;
+padding: 8px 0 11px 0;
 font-size: 18px;
 }
 
@@ -118,9 +119,13 @@ padding-top: 10px;
 font-size: 15px;
 }
 
+#content h4, h5 {
+color: #4990a3;
+}
+
 #content .breadcrumb {
 background-color: #ffffff;
-padding: 20px 5px 0 5px;
+padding: 29px 5px 0 0;
 font-size: 12px;
 }
 
