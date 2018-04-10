@@ -12,7 +12,7 @@ published: true
 summary: a quick introduction to the ancientlives site and content
 ---
 
-*ancientlives* has been designed as a personal site for publishing notes, tutorials, and other media.  
+ancientlives has been designed as a personal site for publishing notes, tutorials, and other media.  
 
 Categories in the [Library](/library) reflect diverse personal interests, and include content derived from current reading, research, whims &c. 
 There is no intentionally discernible pattern, and it will no doubt vary and change as the site develops.
