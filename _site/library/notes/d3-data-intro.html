@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>ancientlives: D3 Data Intro</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="a collection of interesting resources...">
+    <meta name="author" content="">
+
+    <link rel="icon" href="/assets/images/favicon.ico">    
+
+    <!-- bootstrap -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <!-- css for custom bootstrap template -->
+    <link href="/assets/css/style-library.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+	<a id="top"></a>
+	<!-- side-left -->
+	<div id="side-left" class="col-xs-12 col-sm-3 col-md-3">
+	
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">	
+	<!-- navbar header and collapsed toggle -->
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+       ancientlives
+      </a>
+    </div>  
+  </div>
+</nav> 
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <small>
+     
+     
+     
+	<ul class="list-group-item">
+      <h6 class="list-group-item-heading">Menu</h6>
+        <li class="list-unstyled "><a href="/">home</a></li>
+        <li class="list-unstyled "><a href="/about">about</a></li>
+        <li class="list-unstyled "><a href="/blog">blog</a></li>
+        <li class="list-unstyled "><a href="/contact">contact</a></li>
+        <li class="list-unstyled "><a href="/indices">indices</a></li>
+        <li class="list-unstyled active"><a href="/library">library</a></li>
+      </ul>
+      </small>
+    	
+    	
+    	<!-- list-group (posts) -->
+    	<!--<div class="list-group">-->
+    	<small>
+   		<ul class="list-group-item">
+    	<h6 class="list-group-item-heading">Latest Blog Posts</h6>
+    	
+    	<li class="list-unstyled "><a href="/blog/library-d3-drawing-intro">D3 Drawing Intro Note Added</a></li>
+    	
+    	<li class="list-unstyled "><a href="/blog/library-d3-data-intro">D3 Data Intro Note Added</a></li>
+    	
+    	<li class="list-unstyled "><a href="/blog/library-d3-data-basic">D3 Data Basic Note Added</a></li>
+    	
+    	<li class="list-unstyled "><a href="/blog/library-d3-overview">D3 Overview Note Added</a></li>
+    	
+    	<li class="list-unstyled "><a href="/blog/library-d3-setup">D3 Setup Note Added</a></li>
+    	
+   		</ul>
+   		</small>
+		<!--</div>--><!--/list-group (posts) --> 
+		
+		
+		
+		<!-- list-group (posts) -->
+    	<!--<div class="list-group">-->
+    	<small>
+   		<ul class="list-group-item">
+    	<h6 class="list-group-item-heading">Latest Library Posts</h6>
+    	
+    	<li class="list-unstyled "><a href="/library/notes/react-intro">React Intro</a></li>
+    	
+    	<li class="list-unstyled "><a href="/library/notes/node-setup">Node.js Setup</a></li>
+    	
+    	<li class="list-unstyled "><a href="/library/notes/node-npm">Node.js NPM</a></li>
+    	
+    	<li class="list-unstyled "><a href="/library/notes/node-intro">Node.js Intro</a></li>
+    	
+    	<li class="list-unstyled "><a href="/library/notes/d3-drawing-intro">D3 Drawing Intro</a></li>
+    	
+   		</ul>
+   		</small>
+		<!--</div>--><!--/list-group (posts) --> 
+		
+		
+		
+		</div><!-- /.navbar-collapse -->  
+		     
+	</div><!-- /side-left -->
+ 
+    
+    
+
+	<!-- main-right -->
+	<div id="main-right" class="col-xs-12 col-sm-9 col-md-9 pull-right">
+		<!-- content -->
+		<div id="content">
+		<!--breadcrumbs-->
+		
+		<ol class="breadcrumb">
+		
+		
+		<li><a href="/
+		
+		library/
+		
+		">library</a></li>
+		
+		
+		
+		<li><a href="/
+		
+		library/
+		
+		notes/
+		
+		">notes</a></li>
+		
+		
+		
+		<li class="active">d3-data-intro</li>
+		
+		
+		</ol>
+			
+		<!--title, summary, content...-->
+		<h3>D3 Data Intro</h3>
+		<p><em>a brief introduction to data modification and binding in D3</em></p>
+		<hr />
+		<p>A brief introduction on data usage and its application with the <a href="http://d3js.org/">D3</a> Javascript library.</p>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th>Contents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#intro">Introduction</a></td>
+    </tr>
+    <tr>
+      <td><a href="#page">Page elements</a></td>
+    </tr>
+    <tr>
+      <td><a href="#binding">Binding data</a></td>
+    </tr>
+    <tr>
+      <td>          <a href="#binding-json">Loading JSON Data</a></td>
+    </tr>
+    <tr>
+      <td>          <a href="#binding-selection">Making a selection</a></td>
+    </tr>
+    <tr>
+      <td>          <a href="#binding-data">Using the data</a></td>
+    </tr>
+    <tr>
+      <td>          <a href="#binding-text">Beyond text</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><a id="intro"></a></p>
+<h5 id="introduction">Introduction</h5>
+<p>Data is structured information with an inherent perceived potential for meaning. Relative to development for visualisation, data will often be stored simply in a text or binary format. This is not simply textual data, though, but can also include data representing images, audio, video, streams, archives, models, and so on.</p>
+
+<p>However, for the purposes of D3 this concept may often simply be restricted to textual data, or text-based data. Effectively, any data that can be represented as a series of numbers and strings of alpha numeric characters. For example, textual data stored as a comma-separated value file, or .csv, or JSON document, .json, or a plain text file, .txt, can be used with D3.</p>
+
+<p>This data can then be <em>bound</em> to elements within the DOM of a page. This is the inherent pattern for D3.</p>
+
+<p><a id="page"></a></p>
+<h5 id="page-elements">Page elements</h5>
+<p>With D3, the generation of new DOM elements will normally fit either cirles, rectangles, or some other visual form that represents the data. However, we can also create generic structural elements in HTML, such as a <em>p</em>.</p>
+
+<p>For example, we can append a standard <em>p</em> element to our new page as follows</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>d3.select("body").append("p").text("sample text...");
+</code></pre></div></div>
+
+<p>With this simple code, we have used D3 to select the <em>body</em> element, and then append a new <em>p</em> element with the text “new paragraph”. The one thing we can notice straight away is that D3 supports <em>chain syntax</em>, which allowed us to <em>select</em>, <em>append</em>, and add <em>text</em> in one statement.</p>
+
+<p>Effectively, in one statement we were able to select the element, append a new element, and then bind some data. The data was a string of textual characters in this example.</p>
+
+<p><strong>NB:</strong> Javascript, like HTML, does not care about whitespace, line breaks, so we could have written the previous D3 code on separate lines for each function.</p>
+
+<p>So, the above D3 can be understood as follows</p>
+
+<ul>
+  <li>D3 - references the D3 object, so we can access its built-in methods</li>
+  <li><code class="highlighter-rouge">.select("body")</code> - this method accepts a CSS selector and returns the first instance of the matched selector in the document’s DOM
+    <ul>
+      <li><code class="highlighter-rouge">.selectAll()</code> - <strong>NB:</strong> this method is a variant of the single <em>select</em>, and will return all of the matched CSS selectors in the DOM</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">.append("p")</code> - creates the specified new DOM element, and appends it to the end of the defined select CSS selector, just before the closing tag. So, in our example, it simply appends a <em>p</em> element to the end of the defined <em>body</em>.</li>
+  <li><code class="highlighter-rouge">.text("new paragraph")</code> - takes the defined string, “new paragraph”, and adds it to the newly created <em>p</em> DOM element.
+    <ul>
+      <li><strong>NB:</strong> if there is any existing content it will be overwritten by this newly inserted content</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The semi-colon naturally indicates the end of the statement block.</p>
+
+<p><strong>NB:</strong> when chaining methods in D3, order of precedence matters. Also the output type of one method needs to match the expected input type of the next method.</p>
+
+<p>The <a href="https://github.com/mbostock/d3/wiki/API-Reference">API reference</a> provides useful guidance of expected input and output for functions.</p>
+
+<p>We could also have written the above code chain in a more formal, verbose, and chainless manner.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var body = d3.select("body");
+var p = body.append("p");
+p.text("new paragraph");
+</code></pre></div></div>
+
+<p>This can be inefficient for such a short chain, but if we start to grow our chain it may become unwieldy and simply too complicated to chain. Breaking it up can add better logic and readability to our code.</p>
+
+<p><a id="binding"></a></p>
+<h5 id="binding-data">Binding data</h5>
+<p>D3 enables us to bind data to elements in the DOM. Binding is, effectively, associating data to specific elements. This allows us to reference those values later, so that we can apply required mapping rules.</p>
+
+<p>So, we use D3’s <code class="highlighter-rouge">selection.data()</code> method to bind our data to DOM elements. However, we obviously need some data to bind, and a selection of DOM elements.</p>
+
+<p>D3 is particularly flexible with data, and will happily accept various types. It will accept various types of arrays of numbers, strings, or object, and these can also include multidimensional arrays. It can also handle JSON, including GeoJSON, and will even accept CSV files.</p>
+
+<p>For example, an array in D3,</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var data = [ 0, 1, 2, 3, 4, 5 ];
+</code></pre></div></div>
+
+<p><a id="binding-json"></a></p>
+<h6 id="binding-data---loading-json-data">Binding data - loading JSON data</h6>
+<p>D3 has a built-in function to handle loading JSON data.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>d3.json("testdata.json", function(json) {
+	console.log(json); //do something with the json...
+});
+</code></pre></div></div>
+
+<p><strong>NB:</strong> the parsed output data is obviously named <em>json</em>, but it could be named whatever you prefer.</p>
+
+<p><a id="binding-selection"></a></p>
+<h6 id="binding-data---making-a-selection">Binding data - making a selection</h6>
+<p>With our new data, we then need to decide upon a selector within our document. For example, we could select all of the paragraphs in our document</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>d3.select("body").selectAll("p");
+</code></pre></div></div>
+
+<p>However, what happens if the element we require does not yet exist. We then need to use a method called <code class="highlighter-rouge">enter()</code>. For example,</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>d3.select("body").selectAll("p").data(dataset).enter().append("p").text("new paragraph");
+</code></pre></div></div>
+
+<p>If we ran this code, we would get new paragraphs that match the total number of values currently available in the <em>dataset</em>. Effectively, its akin to looping through an array, and outputting a new paragraph for each value in the array.</p>
+
+<p>So, how does the <code class="highlighter-rouge">enter()</code> function work. Well, to create new, data-bound elements we need to use <code class="highlighter-rouge">enter()</code>. This method checks the current DOM selection, and the data being assigned to it. If there are more data values than matching DOM elements, it will simply create a new placeholder element for the data value. It then passes this placeholder on to the next step in the chain, which is <em>append()</em> in our code.</p>
+
+<p>If we run the above code we can see the output text within our new paragraphs. However, the data from our dataset has also been assigned to the new paragraphs. This data value is assigned to each paragraph’s <strong><em>data</em></strong> attribute.</p>
+
+<p><strong>NB:</strong> when D3 binds data to a DOM element, it does not exist in the DOM itself, but it does exist in the memory as a <strong><em>data</em></strong> attribute of the given element. So, in this case it is simply assigned in memory to each <em>p</em> element.</p>
+
+<p><a id="binding-data"></a></p>
+<h6 id="binding-data---using-the-data">Binding data - using the data</h6>
+<p>If we change the last line of our code as follows,</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.text(function(d) { return d; });
+</code></pre></div></div>
+
+<p>and then load our HTML page again, we will now see the dataset values output instead of the previous text. Effectively, anytime in the chain after calling the <em>data()</em> method, we can then access the current data using <em>d</em>. If we are using a loop, the value of <em>d</em> will also change corresponding to the position in the loop.</p>
+
+<p><strong>NB:</strong> the above function is called an <em>anonymous</em> function because we have not assigned a specific function name. If we want to use the above concept of <em>d</em>, we need to assign it to a function, anonymous or otherwise, so that it has a value.</p>
+
+<p><a id="binding-text"></a></p>
+<h6 id="binding-data---beyond-text">Binding data - beyond text</h6>
+<p>We can also bind other things to elements with D3, for example CSS selectors, styles, etc.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.style("color", "blue");
+</code></pre></div></div>
+
+<p>If we chained the above to the end of our existing code, we would now bind an additional css style attribute to each <em>p</em> element, thereby turning the font colour red.</p>
+
+<p>We could also extend this code to include a conditional statememt that checks the value of the data, and then only assigns this CSS styling if it is even or odd.
+A very simplistic striped colour option, for example.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.style("color", function(d) {
+if (d % 2 == 0) {
+return "green";
+} else {
+ return "blue";
+}
+});
+</code></pre></div></div>
+
+		<hr />	
+		<p>Created: 31 Mar 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/javascript">javascript</a>,   <a href="/tags/d3">d3</a>  | Anchor: <a href="#top">Top</a></p>
+    	</div><!-- /content -->
+    </div><!-- /main-right -->
+	<!-- footer -->
+	<div id="footer" class="col-xs-12 col-sm-3 col-md-3 text-center">
+		<hr>
+		<small>
+		<ul class="list-inline">
+		<li><a href="https://500px.com/ancientlives">500px</a></li>
+		<li><a href="https://www.flickr.com/photos/ancientlives/">Flickr</a></li>
+		<li><a href="https://github.com/ancientlives">GitHub</a></li>
+		<li><a href="https://www.google.com/+ancientlives">Google+</a></li>
+		<li><a href="https://twitter.com/ancientphotos">Twitter</a></li>
+		<li><a href="https://www.youtube.com/user/ancientlives">YouTube</a></li>
+		</ul>
+    	<p>Copyright &copy; <a href="mailto:ancientlives@gmail.com">ancientlives</a> 2015</p>
+    	</small>
+    </div><!-- /footer -->		
+</div><!-- /.wrapper -->
+	
+	<!-- bootstrap etc js files -->
+	<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	
+</body>
+</html>

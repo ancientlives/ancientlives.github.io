@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>ancientlives: Jekyll Configuration Options</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="a collection of interesting resources...">
+    <meta name="author" content="">
+
+    <link rel="icon" href="/assets/images/favicon.ico">    
+
+    <!-- bootstrap -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <!-- css for custom bootstrap template -->
+    <link href="/assets/css/style-library.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+	<a id="top"></a>
+	<!-- side-left -->
+	<div id="side-left" class="col-xs-12 col-sm-3 col-md-3">
+	
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">	
+	<!-- navbar header and collapsed toggle -->
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+       ancientlives
+      </a>
+    </div>  
+  </div>
+</nav> 
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <small>
+     
+     
+     
+	<ul class="list-group-item">
+      <h6 class="list-group-item-heading">Menu</h6>
+        <li class="list-unstyled "><a href="/">home</a></li>
+        <li class="list-unstyled "><a href="/about">about</a></li>
+        <li class="list-unstyled "><a href="/blog">blog</a></li>
+        <li class="list-unstyled "><a href="/contact">contact</a></li>
+        <li class="list-unstyled "><a href="/indices">indices</a></li>
+        <li class="list-unstyled active"><a href="/library">library</a></li>
+      </ul>
+      </small>
+    	
+    	
+    	<!-- list-group (posts) -->
+    	<!--<div class="list-group">-->
+    	<small>
+   		<ul class="list-group-item">
+    	<h6 class="list-group-item-heading">Latest Blog Posts</h6>
+    	
+    	<li class="list-unstyled "><a href="/blog/library-d3-drawing-intro">D3 Drawing Intro Note Added</a></li>
+    	
+    	<li class="list-unstyled "><a href="/blog/library-d3-data-intro">D3 Data Intro Note Added</a></li>
+    	
+    	<li class="list-unstyled "><a href="/blog/library-d3-data-basic">D3 Data Basic Note Added</a></li>
+    	
+    	<li class="list-unstyled "><a href="/blog/library-d3-overview">D3 Overview Note Added</a></li>
+    	
+    	<li class="list-unstyled "><a href="/blog/library-d3-setup">D3 Setup Note Added</a></li>
+    	
+   		</ul>
+   		</small>
+		<!--</div>--><!--/list-group (posts) --> 
+		
+		
+		
+		<!-- list-group (posts) -->
+    	<!--<div class="list-group">-->
+    	<small>
+   		<ul class="list-group-item">
+    	<h6 class="list-group-item-heading">Latest Library Posts</h6>
+    	
+    	<li class="list-unstyled "><a href="/library/notes/react-intro">React Intro</a></li>
+    	
+    	<li class="list-unstyled "><a href="/library/notes/node-setup">Node.js Setup</a></li>
+    	
+    	<li class="list-unstyled "><a href="/library/notes/node-npm">Node.js NPM</a></li>
+    	
+    	<li class="list-unstyled "><a href="/library/notes/node-intro">Node.js Intro</a></li>
+    	
+    	<li class="list-unstyled "><a href="/library/notes/d3-drawing-intro">D3 Drawing Intro</a></li>
+    	
+   		</ul>
+   		</small>
+		<!--</div>--><!--/list-group (posts) --> 
+		
+		
+		
+		</div><!-- /.navbar-collapse -->  
+		     
+	</div><!-- /side-left -->
+ 
+    
+    
+
+	<!-- main-right -->
+	<div id="main-right" class="col-xs-12 col-sm-9 col-md-9 pull-right">
+		<!-- content -->
+		<div id="content">
+		<!--breadcrumbs-->
+		
+		<ol class="breadcrumb">
+		
+		
+		<li><a href="/
+		
+		library/
+		
+		">library</a></li>
+		
+		
+		
+		<li><a href="/
+		
+		library/
+		
+		notes/
+		
+		">notes</a></li>
+		
+		
+		
+		<li class="active">jekyll-config</li>
+		
+		
+		</ol>
+			
+		<!--title, summary, content...-->
+		<h3>Jekyll Configuration Options</h3>
+		<p><em>an overview of Jekyll configuration options</em></p>
+		<hr />
+		<p>An overview of some of the configuration options available in Jekyll. This overview is not exhaustive. Further details are 
+available on the <a href="http://jekyllrb.com/docs/configuration/">Jekyll</a> website.</p>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th>Contents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#global">Config Settings - Global configuration</a></td>
+    </tr>
+    <tr>
+      <td><a href="#build">Config Settings - Build command options</a></td>
+    </tr>
+    <tr>
+      <td><a href="#front-overview">Front matter defaults - Overview</a></td>
+    </tr>
+    <tr>
+      <td><a href="#front-precedence">Front matter defaults - Precedence</a></td>
+    </tr>
+    <tr>
+      <td><a href="#def-config">Default configuration</a></td>
+    </tr>
+    <tr>
+      <td><a href="#md-options">Markdown options</a></td>
+    </tr>
+    <tr>
+      <td><a href="#md-custom">Custom markdown processors</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><a id="global"></a></p>
+<h5 id="config-settings---global-configuration">Config settings - Global configuration</h5>
+<p>Some of the global configurations setting for Jekyll include</p>
+
+<ul>
+  <li>site source</li>
+  <li>site destination</li>
+  <li>safe = disable any custom plugins, and also ignore symbolic links</li>
+  <li>exclude = exclude specified directories and files relative to the root directory</li>
+  <li>include = force inclusion of directories and files in the conversion</li>
+  <li>keep files = useful to specify files to keep during site build (ie: files not generated by jekyll)</li>
+  <li>time zone = set time zone for site generation</li>
+  <li>encoding = specify a definite encoding of files. Default is <code class="highlighter-rouge">utf-8</code>.</li>
+  <li>defaults = allows defaults to be set for <em>YAML</em> front matter</li>
+</ul>
+
+<p><a id="build"></a></p>
+<h5 id="config-settings---build-command-options">Config settings - Build command options</h5>
+<p>Options can also be added at the time of a site build. These options include</p>
+
+<ul>
+  <li>regeneration = site will be auto-regenerated if files are modified</li>
+  <li>configuration = specify custom config files. Cascading effect occurs, and settings in later config files will 
+override earlier files</li>
+  <li>draft - tells the build to process draft files</li>
+  <li>future - forces publication of posts with a future date</li>
+  <li>LSI - produces an index for related posts</li>
+  <li>Limit posts - restrict the number of posts to parse and publish</li>
+</ul>
+
+<p><em>NB:</em> destination directory is wiped clean for each build
+<em>NB:</em> do not use tabs in config files</p>
+
+<p><a id="front-overview"></a></p>
+<h5 id="front-matter-defaults---overview">Front matter defaults - Overview</h5>
+<p><em>YAML</em> front matter allows a developer/designer to easily specify configuration for a given site page or post. However, 
+this configuration may lead to repetition of common options, such as post author, category, default layout, and so on.</p>
+
+<p>To avoid such repetition, we can add default configuration options to the site’s <code class="highlighter-rouge">_config.yml</code> file. We specify these 
+defaults using the <code class="highlighter-rouge">defaults</code> key.</p>
+
+<p>The <code class="highlighter-rouge">defaults</code> key stores an array with scope/value pairs, which define defaults that should be set for a given file path 
+and, optionally, file type in that path.</p>
+
+<p>It is also possible to set multiple scope/value pairs for defaults in our <code class="highlighter-rouge">_config.yml</code> file.</p>
+
+<p><a id="front-precedence"></a></p>
+<h5 id="front-matter-defaults---precedence">Front matter defaults - Precedence</h5>
+<p>All configuration settings specified in the <code class="highlighter-rouge">defaults</code> section of a <code class="highlighter-rouge">_config.yml</code> file will be applied by Jekyll. However, 
+it is also possible to override settings by specifying a more specific path for the scope.</p>
+
+<p>For example, we can set a default layout for the overall site, and then specify a different layout for all files in a given
+directory.</p>
+
+<p><em>NB:</em> we can also override <code class="highlighter-rouge">defaults</code> set in the <code class="highlighter-rouge">_config.yml</code> by adding any specific settings to the front matter of a page
+or post.</p>
+
+<p><a id="def-config"></a></p>
+<h5 id="default-configuration">Default Configuration</h5>
+<p>Jekyll runs with many settings already configured by default. These are categorised as follows.</p>
+
+<ul>
+  <li>where things are…</li>
+  <li>handling reading</li>
+  <li>filtering content</li>
+  <li>plugins</li>
+  <li>conversion</li>
+  <li>serving</li>
+  <li>backwards compatibility</li>
+  <li>outputting</li>
+  <li>markdown processors</li>
+</ul>
+
+<p>Further details on these categories can be found in the online <a href="http://jekyllrb.com/docs/configuration/#default-configuration">documentation</a></p>
+
+<p><a id="md-options"></a></p>
+<h5 id="markdown-options">Markdown options</h5>
+<p>The choice of Markdown processor may also include a number of different extra options. These options can be configured for use
+with Jekyll.</p>
+
+<p>For example, the processor <em>Redcarpet</em> can be configured with extensions. These can include extra options such as</p>
+
+<ul>
+  <li>tables</li>
+  <li>autolink</li>
+  <li>footnotes</li>
+  <li>highlight</li>
+  <li>code elements</li>
+  <li>strikethrough</li>
+  <li>superscript</li>
+</ul>
+
+<p>and so on.</p>
+
+<p>In addition to such extras, it is also possible to use GitHub flavoured Markdown with Jekyll. This can be set, for example, 
+in the site’s <code class="highlighter-rouge">_config.yml</code> file as follows,</p>
+
+<p>`kramdown:
+   input: GFM’</p>
+
+<p><a id="md-custom"></a></p>
+<h5 id="custom-markdown-processors">Custom Markdown Processors</h5>
+<p>Jekyll will happily work with a custom Markdown processor. To use this new processor, We can add the option within the site’s 
+config as a <code class="highlighter-rouge">markdown</code> option.</p>
+
+		<hr />	
+		<p>Created: 16 Jan 2015  | Author: ancientlives | Tags:  <a href="/tags/library">library</a>,   <a href="/tags/notes">notes</a>,   <a href="/tags/dev">dev</a>,   <a href="/tags/site-building">site-building</a>,   <a href="/tags/jekyll">jekyll</a>  | Anchor: <a href="#top">Top</a></p>
+    	</div><!-- /content -->
+    </div><!-- /main-right -->
+	<!-- footer -->
+	<div id="footer" class="col-xs-12 col-sm-3 col-md-3 text-center">
+		<hr>
+		<small>
+		<ul class="list-inline">
+		<li><a href="https://500px.com/ancientlives">500px</a></li>
+		<li><a href="https://www.flickr.com/photos/ancientlives/">Flickr</a></li>
+		<li><a href="https://github.com/ancientlives">GitHub</a></li>
+		<li><a href="https://www.google.com/+ancientlives">Google+</a></li>
+		<li><a href="https://twitter.com/ancientphotos">Twitter</a></li>
+		<li><a href="https://www.youtube.com/user/ancientlives">YouTube</a></li>
+		</ul>
+    	<p>Copyright &copy; <a href="mailto:ancientlives@gmail.com">ancientlives</a> 2015</p>
+    	</small>
+    </div><!-- /footer -->		
+</div><!-- /.wrapper -->
+	
+	<!-- bootstrap etc js files -->
+	<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	
+</body>
+</html>
